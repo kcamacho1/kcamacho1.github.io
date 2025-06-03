@@ -1,8 +1,8 @@
 :root {
-  --primary: #1f3a93;      /* Navy Blue */
+  --primary: #6aa2f7;      /* Gray Blue */
   --accent: #3aa17e;       /* Teal Green */
   --text: #333333;         /* Charcoal */
-  --background: #ffffff;   /* White */
+  --background: #333333;   /* Charcoal */
   --secondary-bg: #f7f7f7; /* Light Taupe */
 }
 
@@ -17,9 +17,11 @@ body {
 
 header {
   background-color: var(--primary);
-  color: white;
+  color: var(--background);
   padding: 1.5rem;
   text-align: center;
+  border-radius: 8px;
+  margin-bottom: 5px;
 }
 
 h1, h2 {
@@ -29,7 +31,7 @@ h1, h2 {
 section {
   background-color: var(--secondary-bg);
   padding: 1.5rem;
-  margin-top: 1.5rem;
+  margin-top: 5px;
   border-radius: 8px;
 }
 
@@ -42,7 +44,7 @@ a:hover {
   text-decoration: underline;
 }
 
-.project {
+.project, .contact, .about {
   margin-bottom: 1.5rem;
   margin-left: 30px;
 }
@@ -57,4 +59,31 @@ footer {
 #projecticon  {
     float: left;    
     margin: 10px 15px 0 15px;
+}
+
+.navigation li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  float: left;
+}
+
+.navigation ul {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: var(--background);
+}
+
+.navigation li a {
+  display: block;
+  color: var(--primary);
+  text-align: center;
+  padding: 10px 10px 10px 10px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+.navigation li a:hover {
+  background-color: black;
 }
