@@ -44,6 +44,7 @@ a:hover {
 
 .project {
   margin-bottom: 1.5rem;
+  margin-left: 30px;
 }
 
 footer {
@@ -51,4 +52,9 @@ footer {
   text-align: center;
   font-size: 0.9rem;
   color: #777;
+}
+
+#projecticon  {
+    float: left;    
+    margin: 10px 15px 0 15px;
 }
