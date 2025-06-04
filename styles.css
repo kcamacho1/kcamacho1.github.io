@@ -44,7 +44,7 @@ a:hover {
   text-decoration: underline;
 }
 
-.project, .contact, .about, .info {
+.project, .contact, .about, .info, .mycoculture {
   margin-bottom: 1.5rem;
   margin-left: 30px;
 }
@@ -99,4 +99,10 @@ footer {
 /* Change the link color to #111 (black) on hover */
 .navigation li a:hover {
   background-color: black;
+}
+
+.content-wrapper {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 960px;
 }
