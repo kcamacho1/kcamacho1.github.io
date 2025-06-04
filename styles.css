@@ -25,7 +25,7 @@ header {
 }
 
 h1, h2 {
-  margin: 0.5rem 0;
+  margin: 0.5 rem 0;
 }
 
 section {
@@ -44,7 +44,7 @@ a:hover {
   text-decoration: underline;
 }
 
-.project, .contact, .about {
+.project, .contact, .about, .info {
   margin-bottom: 1.5rem;
   margin-left: 30px;
 }
@@ -58,6 +58,19 @@ footer {
 
 #projecticon  {
     float: left;    
+    margin: 10px 15px 0 15px;
+}
+
+#screenshot1 {
+    align-items: left;
+    margin: 10px 15px 0 15px;
+}
+#screenshot2 {
+    align-items: center;
+    margin: 10px 15px 0 15px;
+}
+#screenshot3 {
+    align-items: right;
     margin: 10px 15px 0 15px;
 }
 
