@@ -74,6 +74,11 @@ footer {
     margin: 10px 15px 0 15px;
 }
 
+#subnote {
+  font-size: small;
+  padding: 0 0 0 0;
+}
+
 .navigation li {
   list-style-type: none;
   margin: 0;
