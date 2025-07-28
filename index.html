@@ -1,59 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio | Kristina Camacho</title>
-  <link type="image/png" sizes="16x16" rel="icon" href="images/favicon.ico">
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kristina Camacho | Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-
-<body>
-  <div class="content-wrapper">
-  <header>
-    <h1>Kristina Carter</h1>
-    <p>Project Manager | AI Software Developer | Electrical Engineering Student</p>
+<body class="bg-gray-100 text-gray-800 font-sans">
+  <!-- Header -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-emerald-600">Kristina Camacho</h1>
+      <nav class="space-x-4 text-sm md:text-base">
+        <a href="/templates/projects.html" class="text-gray-700 hover:text-emerald-600">Projects</a>
+        <a href="#skills" class="text-gray-700 hover:text-emerald-600">Skills</a>
+        <a href="#contact" class="text-gray-700 hover:text-emerald-600">Contact</a>
+      </nav>
+    </div>
   </header>
-  <nav class="navigation">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="templates/about.html">About</a></li>
-      <li><a href="templates/projects.html">Projects</a></li>
-      <li><a href="templates/resume.html">Resume</a></li>
-      <li><a href="templates/certs.html">Certifications</a></li>
-      <li><a href="index.html#contact">Contact</a></li>
-    </ul>
-  </nav>
 
-  <section>
-    <h2 id="about">About Me</h2>
-      <p>
-          Technology + Wellness = Passion
-      </p>
-      <p>
-          My name is Kristina Camacho and I am a multidisciplined software developer with 10 years of experience in project management. 
-          I have experience running and developing projects involved with combining technology and human needs like Software as a service (SAAS) products,
-          subscription models, AI Wellness apps, Marketing solutions and permaculture projects. From these experiences 
-          come a multistrategic understanding of how business needs meet technology to bring the user a rewarding experience.
-          Creating simple and optimized operation solutions light me up faster than a cup of coffee!
-      </p>
-      <p>
-          Click <a href="../templates/projects.html">here</a> or in the navigation bar above to view a list of projects I was directly involved in managing and developing.
-      </p>
-      <p>
-        Enjoy!
-      </p>
+  <!-- Hero -->
+  <section class="py-20 bg-gradient-to-r from-emerald-100 to-emerald-200 text-center">
+    <img src="images/myavatar.png" alt="Kristina Camacho" class="w-32 h-32 rounded-full mx-auto mb-4 shadow-lg">
+    <h2 class="text-4xl font-bold mb-4">Hi, I'm Kristina!</h2>
+    <p class="max-w-xl mx-auto text-lg">Full Stack Developer focused on wellness tech, automation, and AI-driven experiences. I build useful, elegant, and meaningful web apps.</p>
   </section>
 
- 
-  <section>
-    <h2 id="contact">Contact</h2>
-      <p><a href="mailto:carter_kristina@proton.me">Email</a> | <a href="https://github.com/kcamacho1" target="_blank">GitHub</a> | <a href="https://linkedin.com/in/kristinacassiecamacho" target="_blank">LinkedIn</a></p>
+
+  <!-- Skills -->
+  <section id="skills" class="py-16 bg-white px-4">
+    <div class="max-w-4xl mx-auto">
+      <h3 class="text-3xl font-semibold mb-6 text-center">Skills</h3>
+      <ul class="grid grid-cols-2 sm:grid-cols-3 gap-4 text-center text-gray-700">
+        <li>HTML / CSS / JavaScript</li>
+        <li>Python / FastAPI</li>
+        <li>React / Vue 3</li>
+        <li>Supabase / Firebase</li>
+        <li>AI & Automation</li>
+        <li>Project Management & QA</li>
+      </ul>
+    </div>
   </section>
 
-  <footer>
-    <p>&copy; 2025 Kristina Camacho. All rights reserved.</p>
+  <!-- Contact -->
+  <section id="contact" class="py-16 px-4 bg-emerald-50">
+    <div class="max-w-2xl mx-auto text-center">
+      <h3 class="text-3xl font-semibold mb-6">Contact Me</h3>
+      <div class="flex justify-center space-x-6 mt-6">
+        <a href="mailto:carter_kristina@proton.me" target="_blank">
+          <img src="images/icons/mail.png" alt="Email" class="w-8 h-8 hover:scale-110 transition-transform">
+        </a>
+        <a href="https://linkedin.com/in/kcamacho1" target="_blank">
+          <img src="images/icons/linkedin.png" alt="LinkedIn" class="w-8 h-8 hover:scale-110 transition-transform">
+        </a>
+        <a href="https://github.com/kcamacho1" target="_blank">
+          <img src="images/icons/github.png" alt="GitHub" class="w-8 h-8 hover:scale-110 transition-transform">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white text-center py-6 text-sm text-gray-500">
+    © 2025 Kristina Camacho. All rights reserved.
   </footer>
-  </div>
 </body>
 </html>

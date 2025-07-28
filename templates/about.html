@@ -1,59 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio | Kristina Camacho</title>
-  <link type="image/png" sizes="16x16" rel="icon" href="../images/favicon.ico">
-  <link rel="stylesheet" href="../styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Kristina Camacho</title>
+  <link rel="icon" href="../images/favicon.ico" type="image/x-icon" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
 </head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+  <div id="header"></div>
 
-<body>
-    <div class="content-wrapper">
-  <header>
-    <h1>Kristina Camacho</h1>
-    <p>Project Manager | AI Software Developer | Electrical Engineering Student</p>
-  </header>
-  <nav class="navigation">
-    <ul>
-      <li><a href="../index.html">Home</a></li>
-      <li><a href="../templates/about.html">About</a></li>
-      <li><a href="../templates/projects.html">Projects</a></li>
-      <li><a href="../templates/resume.html">Resume</a></li>
-      <li><a href="../templates/certs.html">Certifications</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+  <main class="max-w-4xl mx-auto p-6">
+    <section class="mb-16">
+      <h2 id="about" class="text-3xl font-semibold mb-4 text-center">About Me</h2>
+      <p class="text-center text-lg text-gray-600 mb-6">Technology + Wellness = Passion</p>
+      <div class="space-y-6 text-gray-700 text-base leading-relaxed">
+        <p>
+          I'm <strong>Kristina Camacho</strong>, a multi-disciplined software developer and project manager with over 10 years of experience leading tech-driven solutions that serve real human needs.
+        </p>
+        <p>
+          My background includes launching and managing SaaS products, subscription platforms, AI wellness applications, digital marketing tools, and regenerative permaculture projects. I bridge the gap between intuitive design, technical execution, and business strategy.
+        </p>
+        <p>
+          I thrive on simplifying systems, optimizing operations, and building thoughtful user-centered products. Problem-solving lights me up faster than a cup of coffee!
+        </p>
+        <p>
+          Click <a href="../templates/projects.html" class="text-emerald-600 underline">here</a> or use the navigation to explore projects I’ve led, designed, and developed.
+        </p>
+        <p>
+          Thanks for stopping by — I hope you enjoy!
+        </p>
+      </div>
+    </section>
 
-  <section>
-    <h2 id="about">About Me</h2>
-      <p>
-          Technology + Wellness = Passion
-      </p>
-      <p>
-          My name is Kristina Camacho and I am a multidisciplined software developer with 10 years of experience in project management. 
-          I have experience running and developing projects involved with combining technology and human needs like Software as a service (SAAS) products,
-          subscription models, AI Wellness apps, Marketing solutions and permaculture projects. From these experiences 
-          come a multistrategic understanding of how business needs meet technology to bring the user a rewarding experience.
-          Creating simple and optimized operation solutions light me up faster than a cup of coffee!
-      </p>
-      <p>
-          Click <a href="../templates/projects.html">here</a> or in the navigation bar above to view a list of projects I was directly involved in managing and developing.
-      </p>
-      <p>
-        Enjoy!
-      </p>
-  </section>
+    <section id="contact" class="text-center py-10">
+      <h2 class="text-3xl font-semibold mb-4">Contact</h2>
+      <div class="flex justify-center space-x-6">
+        <a href="mailto:carter_kristina@proton.me">
+          <img src="../images/icons/mail.png" alt="Email" class="w-8 h-8 hover:scale-110 transition-transform">
+        </a>
+        <a href="https://github.com/kcamacho1" target="_blank">
+          <img src="../images/icons/github.png" alt="GitHub" class="w-8 h-8 hover:scale-110 transition-transform">
+        </a>
+        <a href="https://linkedin.com/in/kristinacassiecamacho" target="_blank">
+          <img src="../images/icons/linkedin.png" alt="LinkedIn" class="w-8 h-8 hover:scale-110 transition-transform">
+        </a>
+      </div>
+    </section>
+  </main>
 
- 
-  <section>
-    <h2 id="contact">Contact</h2>
-      <p><a href="mailto:carter_kristina@proton.me">Email</a> | <a href="https://github.com/kcamacho1" target="_blank">GitHub</a> | <a href="https://linkedin.com/in/kristinacassiecamacho" target="_blank">LinkedIn</a></p>
-  </section>
+  <div id="footer"></div>
 
-  <footer>
-    <p>&copy; 2025 Kristina Camacho. All rights reserved.</p>
-  </footer>
-</div>
+  <script>
+    fetch('../partials/header.html')
+      .then(res => res.text())
+      .then(data => document.getElementById('header').innerHTML = data)
+      .catch(err => console.error('Header fetch error:', err));
+
+    fetch('../partials/footer.html')
+      .then(res => res.text())
+      .then(data => document.getElementById('footer').innerHTML = data)
+      .catch(err => console.error('Footer fetch error:', err));
+  </script>
 </body>
 </html>

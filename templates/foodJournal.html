@@ -1,89 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio | Kristina Camacho</title>
-  <link type="image/png" sizes="16x16" rel="icon" href="../images/favicon.ico">
-  <link rel="stylesheet" href="../styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Food Journal | Kristina Camacho</title>
+  <link rel="icon" href="../images/favicon.ico" type="image/x-icon" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
 </head>
 
-<body>
-    <div class="content-wrapper">
-  <header>
-    <h1>AI Food Journal</h1>
-    <p>
-      Personal Nutrition Journal with Macro tracking, Statistics/ Dashboard and AI Support
-      <br>
-            <b>Role:</b> Full Stack Developer
-    </p>
-  </header>
-  <nav class="navigation">
-    <ul>
-      <li><a href="../index.html">Home</a></li>
-      <li><a href="../templates/about.html">About</a></li>
-      <li><a href="../templates/projects.html">Projects</a></li>
-      <li><a href="../templates/resume.html">Resume</a></li>
-      <li><a href="../templates/certs.html">Certifications</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+<body class="bg-gray-100 text-gray-800 font-sans">
+  <!-- Header Partial -->
+  <div id="header"></div>
 
-  <section>
-    <h2>Tech Stack</h2>
-      <p class="techstack">
-        | Python | Flask | HTML | CSS | SQLite | Nutritionix API |
-      </p>
-    <h3>Features</h3>  
-      <ul class="info">
-        <li>
-        Personal Nutrition App: Log your food and receive nutritional information about your meal. 
-        </li>
-        <li>
-        Personal Dataset: This app saves a database of logged food and allows the user to view thier data as a table or graph. 
-        </li>
-        <li>
-        AI Integration: Users data is provided to AI for tailored meal suggestions or vitamins to supplement any nutritional gaps
-        </li>
-        <li>
-            <a href="https://ki-wellness.onrender.com">Click here to demo</a>
-        </li>
-    </ul>
-
+  <main class="max-w-6xl mx-auto p-6">
+    <!-- Title -->
+    <section class="mb-12">
+      <h1 class="text-4xl font-bold text-center mb-2 text-emerald-700">AI Food Journal</h1>
+      <p class="text-center text-gray-600">Personal Nutrition Journal with Macro Tracking, Statistics/Dashboard, and AI Support</p>
+      <p class="text-center text-sm text-gray-500 mt-1"><strong>Role:</strong> Full Stack Developer</p>
     </section>
-    <section id="gallery">
-        <h2>Gallery</h2>
-        <p>
-            <a href="../assets/kiwellness/kiwellnessv2.png" target="_blank">
-                <img src="../assets/kiwellness/kiwellnessv2.png" width="400" height="200" id="screenshot1" />
-            </a>
-            <a href="../assets/kiwellness/enterfood.png" target="_blank">
-                <img src="../assets/kiwellness/enterfood.png" width="400" height="200" id="screenshot2" />
-            </a>
-            <a href="../assets/kiwellness/upload.png" target="_blank">
-                <img src="../assets/kiwellness/upload.png" width="400" height="200" id="screenshot1" />
-            </a>
-            <a href="../assets/kiwellness/wireframe1" target="_blank">
-                <img src="../assets/kiwellness/wireframe1.png" width="400" height="200" id="screenshot2" />
-            </a>
-              <a href="../assets/kiwellness/design.png" target="_blank">
-                <img src="../assets/kiwellness/design.png" width="400" height="200" id="screenshot1" />
-            </a>
-            <a href="../assets/kiwellness/kiwellnessv1.png" target="_blank">
-                <img src="../assets/kiwellness/kiwellnessv1.png" width="400" height="200" id="screenshot2" />
-            </a>
-        </p>
-  </section>
 
- 
-  <section>
-    <h2 id="contact">Contact</h2>
-      <p><a href="mailto:carter_kristina@proton.me">Email</a> | <a href="https://github.com/kcamacho1" target="_blank">GitHub</a> | <a href="https://linkedin.com/in/kristinacassiecamacho" target="_blank">LinkedIn</a></p>
-  </section>
 
-  <footer>
-    <p>&copy; 2025 Kristina Camacho. All rights reserved.</p>
-  </footer>
-  </div>
+        <!-- Tech Stack -->
+    <section class="mb-10">
+      <h2 class="text-2xl font-semibold mb-2">Tech Stack</h2>
+      <p class="text-sm text-gray-700">| Python | Flask | HTML | CSS | SQLite | Nutritionix API |</p>
+    </section>
+
+    <!-- Gallery -->
+    <section class="mb-16">
+      <h2 class="text-2xl font-semibold mb-4 text-center">Gallery</h2>
+      <div class="relative">
+        <!-- Left Arrow -->
+        <button id="scrollLeft" class="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-white shadow rounded-full p-2 hover:bg-emerald-100">
+          &#8592;
+        </button>
+
+<!-- Scrollable Image Row -->
+<div id="scrollGallery" class="flex overflow-x-auto space-x-4 px-8 py-2 scroll-smooth">
+  <a href="../assets/kiwellness/kiwellnessv2.png" target="_blank">
+    <img src="../assets/kiwellness/kiwellnessv2.png" alt="KiWellness UI V2" class="max-h-48 object-contain rounded shadow flex-shrink-0" />
+  </a>
+  <a href="../assets/kiwellness/enterfood.png" target="_blank">
+    <img src="../assets/kiwellness/enterfood.png" alt="Food Entry Form" class="max-h-48 object-contain rounded shadow flex-shrink-0" />
+  </a>
+  <a href="../assets/kiwellness/upload.png" target="_blank">
+    <img src="../assets/kiwellness/upload.png" alt="Upload Interface" class="max-h-48 object-contain rounded shadow flex-shrink-0" />
+  </a>
+  <a href="../assets/kiwellness/wireframe1.png" target="_blank">
+    <img src="../assets/kiwellness/wireframe1.png" alt="Wireframe" class="max-h-48 object-contain rounded shadow flex-shrink-0" />
+  </a>
+  <a href="../assets/kiwellness/design.png" target="_blank">
+    <img src="../assets/kiwellness/design.png" alt="Design Concept" class="max-h-48 object-contain rounded shadow flex-shrink-0" />
+  </a>
+  <a href="../assets/kiwellness/kiwellnessv1.png" target="_blank">
+    <img src="../assets/kiwellness/kiwellnessv1.png" alt="KiWellness UI V1" class="max-h-48 object-contain rounded shadow flex-shrink-0" />
+  </a>
+</div>
+
+
+        <!-- Right Arrow -->
+        <button id="scrollRight" class="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-white shadow rounded-full p-2 hover:bg-emerald-100">
+          &#8594;
+        </button>
+      </div>
+    </section>
+
+
+    <!-- Features -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-semibold mb-4">Features</h2>
+      <ul class="list-disc list-inside space-y-2">
+        <li>Log your food and receive nutritional information about your meal.</li>
+        <li>View saved meal data in table or graph format.</li>
+        <li>AI provides tailored meal suggestions and supplement guidance based on dietary gaps.</li>
+        <li><a href="https://github.com/kcamacho1/AI_food_journal" target="_blank" class="text-emerald-600 underline">Github code</a></li>
+      </ul>
+    </section>
+
+
+    <!-- Contact -->
+    <section class="text-center">
+      <h2 id="contact" class="text-2xl font-semibold mb-4">Contact</h2>
+      <p>
+        <a href="mailto:carter_kristina@proton.me" class="text-emerald-600 underline">Email</a> |
+        <a href="https://github.com/kcamacho1" target="_blank" class="text-emerald-600 underline">GitHub</a> |
+        <a href="https://linkedin.com/in/kristinacassiecamacho" target="_blank" class="text-emerald-600 underline">LinkedIn</a>
+      </p>
+    </section>
+  </main>
+
+  <!-- Footer Partial -->
+  <div id="footer"></div>
+
+  <!-- Partial loading script -->
+  <script>
+    fetch('../partials/header.html')
+      .then(res => res.text())
+      .then(data => document.getElementById('header').innerHTML = data)
+      .catch(err => console.error('Header fetch error:', err));
+
+    fetch('../partials/footer.html')
+      .then(res => res.text())
+      .then(data => document.getElementById('footer').innerHTML = data)
+      .catch(err => console.error('Footer fetch error:', err));
+
+    const scrollGallery = document.getElementById('scrollGallery');
+    document.getElementById('scrollLeft').addEventListener('click', () => {
+      scrollGallery.scrollBy({ left: -300, behavior: 'smooth' });
+    });
+    document.getElementById('scrollRight').addEventListener('click', () => {
+      scrollGallery.scrollBy({ left: 300, behavior: 'smooth' });
+    });
+  </script>
 </body>
 </html>

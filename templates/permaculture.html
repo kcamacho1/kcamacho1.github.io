@@ -1,106 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio | Kristina Camacho</title>
-  <link type="image/png" sizes="16x16" rel="icon" href="../images/favicon.ico">
-  <link rel="stylesheet" href="../styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Permaculture Internship Program | Kristina Camacho</title>
+  <link rel="icon" href="../images/favicon.ico" type="image/x-icon" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
 </head>
 
-<body>
-  <div class="content-wrapper">
-  <header>
-    <h1>Permaculture Internship Program</h1>
-    <p>
-        Organized education track with a non-profit spiritual community
-        <br>
-        <b>Role:</b> Organizational Strategist | Project Manager | Participant
-    </p>
+<body class="bg-gray-100 text-gray-800 font-sans">
+  <!-- Header Partial -->
+  <div id="header"></div>
 
-  </header>
-  <nav class="navigation">
-    <ul>
-      <li><a href="../index.html">Home</a></li>
-      <li><a href="../templates/about.html">About</a></li>
-      <li><a href="../templates/projects.html">Projects</a></li>
-      <li><a href="../templates/resume.html">Resume</a></li>
-      <li><a href="../templates/certs.html">Certifications</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+  <main class="max-w-6xl mx-auto p-6">
+    <!-- Title -->
+    <section class="mb-12 text-center">
+      <h1 class="text-4xl font-bold text-emerald-700 mb-2">Permaculture Internship Program</h1>
+      <p class="text-gray-600">Organized education track with a nonprofit spiritual community</p>
+      <p class="text-sm text-gray-500 mt-1"><strong>Role:</strong> Organizational Strategist | Project Manager | Participant</p>
+    </section>
 
-  <section>
-    <h2>Internship Program</h2>
-        <p class="internship">
-            At Claymont (A Non-Profit Nature Preserve and Retreat Center) I created the organizing structure for the Claymont Retreat Centers first permaculture intership program. 
-            Before arriving there was discourse within the community members however after surveying the individuals I was able to 
-            recognize a consistent pain point (heirarchy structure) that was hindering progress of this program.
-            <br>
-            <br>
-            Using experience from network engineering I used star topology as inspiration for the new organizing structure. 
-            After presenting this information to the community members we had majority buy in and was able to successfully kick off and complete the permaculture program at Claymont! 
-        </p>
-    <h3>Program Courses Included</h3>
-        <ul>
-            <li>
-                Tiny house build
-            </li>
-            <li>
-                Natural Soap Making
-            </li>
-            <li>
-                Meditation Practice
-            </li>
-            <li>
-                Tai Chi
-            </li>
-            <li>
-                Food forest preservation
-            </li>
-            <li>
-                Food Garden Cultivation
-            </li>
-            <li>
-                Yoga
-            </li>
-            <li>
-                Visit <a href="https://claymont.org">Claymont Website</a>
-            </li>
-        </ul>
-              <br>
-    <h3>Internship Work Teams Sheet</h3>
-        <p>
-            PDF of the reorganization of teams and course leads, assistant, or support
-        </p>
-        <p>
-            <i id="subnote">* names and contact information removed for privacy *</i>
-        </p>
-        <object data="../assets/permaculture/workteams.pdf" type="application/pdf" width="100%" height="400px">
-            <p>Unable to display PDF file. <a href="../assets/permaculture/workteams.pdf">Download</a> instead.</p>
-        </object>
-  </section>
 
-  <section>
-    <h2>Gallery</h2>
-        <p>
-            <a href="../assets/permaculture/tinyfloorplan.png" target="_blank">
-                <img src="../assets/permaculture/tinyfloorplan.png" width="500" height="200" id="screenshot1" />
-            </a>
-            <a href="../assets/permaculture/outdoorgrow.jpg" target="_blank">
-                <img src="../assets/permaculture/outdoorgrow.jpg" width="200" height="300" id="screenshot2" />
-            </a>
-        </p>
-  </section>
- 
-  <section>
-    <h2 id="contact">Contact</h2>
-      <p><a href="mailto:carter_kristina@proton.me">Email</a> | <a href="https://github.com/kcamacho1" target="_blank">GitHub</a> | <a href="https://linkedin.com/in/kristinacassiecamacho" target="_blank">LinkedIn</a></p>
-  </section>
+    <!-- Program Description -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-semibold mb-4">Internship Program</h2>
+      <p class="mb-4">
+        At Claymont, a nonprofit nature preserve and retreat center, I created the organizing structure for their first permaculture internship program. I surveyed community members to identify a consistent pain point — lack of organizing clarity — which was impeding collaboration.
+      </p>
+      <p class="mb-4">
+        Using my background in network engineering, I adapted the concept of star topology to reframe the team hierarchy. Once presented, the structure received majority buy-in and enabled the successful launch and completion of the internship.
+      </p>
+    </section>
 
-  <footer>
-    <p>&copy; 2025 Kristina Camacho. All rights reserved.</p>
-  </footer>
+
+        <!-- Horizontal Gallery -->
+<section class="mb-12">
+  <h2 class="text-2xl font-semibold mb-4 text-center">Gallery Preview</h2>
+  <div class="relative">
+    <!-- Left arrow -->
+    <button id="scrollLeft" class="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-white shadow rounded-full p-2 hover:bg-emerald-100">
+      &#8592;
+    </button>
+
+    <!-- Scrollable container -->
+    <div id="galleryScroll" class="flex overflow-x-auto space-x-4 px-8 py-2 scroll-smooth">
+      <img src="../assets/permaculture/tinyfloorplan.png" alt="Tiny House Floorplan" class="h-48 rounded shadow flex-shrink-0" />
+      <img src="../assets/permaculture/outdoorgrow.jpg" alt="Outdoor Grow" class="h-48 rounded shadow flex-shrink-0" />
+      <img src="../assets/permaculture/shiitaki.jpg" alt="Shiitake" class="h-48 rounded shadow flex-shrink-0" />
+      <img src="../assets/permaculture/oysters.jpg" alt="Oysters" class="h-48 rounded shadow flex-shrink-0" />
+    </div>
+
+    <!-- Right arrow -->
+    <button id="scrollRight" class="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-white shadow rounded-full p-2 hover:bg-emerald-100">
+      &#8594;
+    </button>
   </div>
+</section>
+
+    <!-- Courses -->
+    <section class="mb-12">
+      <h3 class="text-xl font-semibold mb-2">Program Courses Included</h3>
+      <ul class="list-disc list-inside space-y-1">
+        <li>Tiny House Build</li>
+        <li>Natural Soap Making</li>
+        <li>Meditation Practice</li>
+        <li>Tai Chi</li>
+        <li>Food Forest Preservation</li>
+        <li>Food Garden Cultivation</li>
+        <li>Yoga</li>
+        <li>
+          <a href="https://claymont.org" target="_blank" class="text-emerald-600 underline">Visit Claymont Website</a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Work Teams PDF -->
+    <section class="mb-12">
+      <h3 class="text-xl font-semibold mb-2">Internship Work Teams Sheet</h3>
+      <p class="text-sm mb-2">PDF outlining reorganized teams, leads, assistants, and support roles.</p>
+      <p class="text-sm italic text-gray-500 mb-4">*Names and contact information removed for privacy*</p>
+      <object data="../assets/permaculture/workteams.pdf" type="application/pdf" width="100%" height="400px">
+        <p>Unable to display PDF. <a href="../assets/permaculture/workteams.pdf" class="text-emerald-600 underline">Download instead</a>.</p>
+      </object>
+    </section>
+
+
+    <!-- Contact -->
+    <section class="text-center">
+      <h2 id="contact" class="text-2xl font-semibold mb-4">Contact</h2>
+      <p>
+        <a href="mailto:carter_kristina@proton.me" class="text-emerald-600 underline">Email</a> |
+        <a href="https://github.com/kcamacho1" target="_blank" class="text-emerald-600 underline">GitHub</a> |
+        <a href="https://linkedin.com/in/kristinacassiecamacho" target="_blank" class="text-emerald-600 underline">LinkedIn</a>
+      </p>
+    </section>
+  </main>
+
+  <!-- Footer Partial -->
+  <div id="footer"></div>
+
+  <script>
+    fetch('../partials/header.html')
+      .then(res => res.text())
+      .then(data => document.getElementById('header').innerHTML = data)
+      .catch(err => console.error('Header fetch error:', err));
+
+    fetch('../partials/footer.html')
+      .then(res => res.text())
+      .then(data => document.getElementById('footer').innerHTML = data)
+      .catch(err => console.error('Footer fetch error:', err));
+  </script>
 </body>
 </html>

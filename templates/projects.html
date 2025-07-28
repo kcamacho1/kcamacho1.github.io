@@ -1,126 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio | Kristina Camacho</title>
-  <link type="image/png" sizes="16x16" rel="icon" href="../images/favicon.ico">
-  <link rel="stylesheet" href="../styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Kristina Camacho</title>
+  <link rel="icon" href="../images/favicon.ico" type="image/x-icon" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
 </head>
 
-<body>
-  <div class="content-wrapper">
-  <header>
-    <h1>Kristina Camacho</h1>
-    <p>Project Manager | AI Software Developer | Electrical Engineering Student</p>
-  </header>
-  <nav class="navigation">
-    <ul>
-      <li><a href="../index.html">Home</a></li>
-      <li><a href="../templates/about.html">About</a></li>
-      <li><a href="../templates/projects.html">Projects</a></li>
-      <li><a href="../templates/resume.html">Resume</a></li>
-      <li><a href="../templates/certs.html">Certifications</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+<body class="bg-gray-100 text-gray-800 font-sans">
+  <div id="header"></div>
 
+  <main class="max-w-6xl mx-auto p-4">
+    <section>
+      <h2 id="projects" class="text-3xl font-semibold mb-6 text-center">Projects</h2>
 
-  <section>
-    <h2 id="projects">Projects</h2>
+      <div class="space-y-12">
+        <!-- Ki Wellness -->
+        <div class="bg-white p-6 rounded-xl shadow">
+          <h3 class="text-xl font-semibold">Ki Wellness <i>(in progress)</i></h3>
+          <hr class="my-2">
+          <img src="../assets/kiwellness2/sqlogo.png" alt="kiiconimg" class="w-24 h-24 mx-auto">
+          <p class="mt-2">AI-powered health platform with food journaling, personalized macro analysis, spiritual and physical recommendations.</p>
+          <div class="mt-4 space-x-4">
+            <a href="../templates/kiwellness.html" class="text-emerald-600 underline">Learn More</a>
+            <a href="https://kiwellness.org" class="text-emerald-600 underline">View Site</a>
+          </div>
+        </div>
 
-<!-- Ki Wellness -->
-    <div class="project">
-      <h3>Ki Wellness <i>(in progress)</i></h3>
-      
-      <hr>
-      <img src="../assets/kiwellness2/sqlogo.png" alt="kiiconimg" width="100" height="100" id="projecticon"/>
-      <p>Designed, Built and Deployed a full AI-powered health platform. </p> 
-      <p>Personal Food journal with AI integrated into: Macro lookup, analysis of nutritional gaps, meal suggestions, 
-        Exercise and Spiritual video suggestions tailored to you. Using technology to help you feel your best in the easiest way possible</p>
-        <ul>
-          <a href="../templates/kiwellness.html" target="_self">Learn More</a>
-        </ul>
-        <ul>
-          <a href="https://kiwellness.org" target="_self">View Site</a>
-        </ul>
-    </div>
-    
-    <br>
+        <!-- AI Food Journal -->
+        <div class="bg-white p-6 rounded-xl shadow">
+          <h3 class="text-xl font-semibold">AI Food Journal</h3>
+          <hr class="my-2">
+          <img src="../assets/kiwellness/Tech~KiWellness.png" alt="kiiconimg" class="w-24 h-24 mx-auto">
+          <p class="mt-2">Track meals and receive AI-powered nutrition suggestions with a clean UI.</p>
+          <div class="mt-4 space-x-4">
+            <a href="../templates/foodJournal.html" class="text-emerald-600 underline">Learn More</a>
+            <a href="https://github.com/kcamacho1/AI_food_journal" target="_blank" class="text-emerald-600 underline">GitHub Code</a>
+          </div>
+        </div>
 
-<!-- AI Food Journal App -->
-    <div class="project">
-      <h3>AI Food Journal</h3>
-      <hr>
-      <img src="../assets/kiwellness/Tech~KiWellness.png" alt="kiiconimg" width="100" height="100" id="projecticon"/>
-      <p>AI food Journal with macro lookup and AI analysis with Meal suggestions.</p>
-        <ul>
-          <a href="../templates/foodJournal.html" target="_self">Learn More</a>
-        </ul>
-        <ul>
-          <a href="https://github.com/kcamacho1/AI_food_journal" target="_blank">GitHub Code</a>
-        </ul>
-    </div>
-    
-    <br>
+        <!-- RC Car -->
+        <div class="bg-white p-6 rounded-xl shadow">
+          <h3 class="text-xl font-semibold">Autonomous RC Car</h3>
+          <hr class="my-2">
+          <img src="../assets/tankbot/exteriorFrontTank.png" alt="tankimg" class="w-24 h-24 mx-auto">
+          <p class="mt-2">Arduino + C++ powered car with object detection and battery integration.</p>
+          <div class="mt-4 space-x-4">
+            <a href="../templates/autonomousCarProject.html" class="text-emerald-600 underline">Learn More</a>
+            <a href="https://github.com/kcamacho1/tank_bot/blob/main/README.md" target="_blank" class="text-emerald-600 underline">GitHub Code</a>
+          </div>
+        </div>
 
-<!-- RC Car -->
-    <div class="project">
-      <h3>Autonomous RC Car</h3>
-      <hr>
-      <img src="../assets/tankbot/exteriorFrontTank.png" alt="tankimg" width="100" height="100" id="projecticon"/>
-      <p>Arduino + C++ autonomous car with object detection and battery integration.</p>
-      
-        <ul>
-          <a href="../templates/autonomousCarProject.html" target="_self">Learn More</a>
-        </ul>
-        <ul>
-          <a href="https://github.com/kcamacho1/tank_bot/blob/main/README.md" target="_blank">GitHub Code</a>
-        </ul>
-      
+        <!-- Mushroom Lab -->
+        <div class="bg-white p-6 rounded-xl shadow">
+          <h3 class="text-xl font-semibold">Edible Mushroom Lab</h3>
+          <hr class="my-2">
+          <img src="../assets/mushroomlab/mycoculture.png" alt="myceliumimg" class="w-24 h-24 mx-auto">
+          <p class="mt-2">Designed, built and maintained an edible mushroom lab for clean food cultivation.</p>
+          <div class="mt-4">
+            <a href="../templates/mushroomlab.html" class="text-emerald-600 underline">Learn More</a>
+          </div>
+        </div>
+
+        <!-- Permaculture Internship -->
+        <div class="bg-white p-6 rounded-xl shadow">
+          <h3 class="text-xl font-semibold">Permaculture Internship</h3>
+          <hr class="my-2">
+          <img src="../assets/permaculture/permaculture.png" alt="permacultureimg" class="w-24 h-24 mx-auto">
+          <p class="mt-2">Led operational team strategy and education track for a sustainability internship.</p>
+          <div class="mt-4">
+            <a href="../templates/permaculture.html" class="text-emerald-600 underline">Learn More</a>
+          </div>
+        </div>
       </div>
+    </section>
+  </main>
 
-          <br>
+  <div id="footer"></div>
 
-<!-- Mushroom Lab -->
-      <div class="project">
-        <h3>Edible Mushroom Lab</h3>
-        <hr>
-        <img src="../assets/mushroomlab/mycoculture.png" alt="myceliumimg" width="100" height="100" id="projecticon"/>
-        <p>Designed, built and maintained an Edible Mushroom Lab</p>
-        
-          <ul>
-            <a href="../templates/mushroomlab.html" target="_self">Learn More</a>
-          </ul>
-        
-        </div>
+  <script>
+    fetch('../partials/header.html')
+      .then(res => res.text())
+      .then(data => document.getElementById('header').innerHTML = data)
+      .catch(err => console.error('Header fetch error:', err));
 
-                  <br>
-                  <br>
-<!-- Permaculture Internship -->
-      <div class="project">
-        <h3>Permaculture Internship</h3>
-        <hr>
-        <img src="../assets/permaculture/permaculture.png" alt="myceliumimg" width="100" height="100" id="projecticon"/>
-        <p>Organized operational teams for a permaculture internship program and education track</p>
-        
-          <ul>
-            <a href="../templates/permaculture.html" target="_self">Learn More</a>
-          </ul>
-          <br>
-        </div>
-  </section>
-
-  <section>
-    <h2 id="contact">Contact</h2>
-    <div class="contact">
-      <p><a href="mailto:carter_kristina@proton.me">Email</a> | <a href="https://github.com/kcamacho1" target="_blank">GitHub</a> | <a href="https://linkedin.com/in/kristinacassiecamacho" target="_blank">LinkedIn</a></p>
-    </div>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Kristina Camacho. All rights reserved.</p>
-  </footer>
-  </div>
+    fetch('../partials/footer.html')
+      .then(res => res.text())
+      .then(data => document.getElementById('footer').innerHTML = data)
+      .catch(err => console.error('Footer fetch error:', err));
+  </script>
 </body>
 </html>

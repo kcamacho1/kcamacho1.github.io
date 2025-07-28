@@ -3,86 +3,84 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Portfolio | Kristina Camacho</title>
-  <link type="image/png" sizes="16x16" rel="icon" href="../images/favicon.ico">
-  <link rel="stylesheet" href="../styles.css">
+  <title>Certifications | Kristina Camacho</title>
+  <link rel="icon" href="../images/favicon.ico" type="image/x-icon" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
 </head>
 
-<body>
-  <div class="content-wrapper">
-    <header>
-      <h1>Kristina Camacho</h1>
-      <p>Project Manager | AI Software Developer | Electrical Engineering Student</p>
-    </header>
+<body class="bg-gray-100 text-gray-800 font-sans">
+  <div id="header"></div>
 
-    <nav class="navigation">
-      <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="../templates/about.html">About</a></li>
-        <li><a href="../templates/projects.html">Projects</a></li>
-        <li><a href="../templates/resume.html">Resume</a></li>
-        <li><a href="../templates/certs.html">Certifications</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+  <main class="max-w-6xl mx-auto p-6">
+    <h2 class="text-4xl font-bold text-center mb-12 text-emerald-700">Certifications</h2>
 
-    <section>
-      <h2 id="certs">Certifications</h2>
-
-      <div class="cert-group">
-        <h3>Tech & Management</h3>
-        <div class="cert-grid">
-          <a href="../assets/certs/Google_Project_Management_Certificate_Badge.jpg" target="_blank">
-            <img src="../assets/certs/Google_Project_Management_Certificate_Badge.jpg" alt="Google Project Management" width="300" height="250">
-          </a>
+    <!-- Certification Category -->
+    <section class="mb-16">
+      <h3 class="text-2xl font-semibold text-gray-700 mb-6 border-b border-emerald-200 pb-2">AI & Technical Project Management</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <div class="bg-white rounded-xl shadow p-4 hover:shadow-lg transition duration-300">
+          <img src="../assets/certs/Google_Project_Management_Certificate_Badge.jpg" alt="Google Project Management" class="rounded-lg mx-auto mb-3 hover:grayscale transition duration-200">
+          <p class="text-center text-sm font-medium">Google Project Management Certificate</p>
         </div>
       </div>
-
-      <div class="cert-group">
-        <h3>Health & Wellness</h3>
-        <div class="cert-grid">
-          <a href="../assets/certs/Certified-Personal-Trainer-2025.jpg" target="_blank">
-            <img src="../assets/certs/Certified-Personal-Trainer-2025.jpg" alt="Certified Personal Trainer" width="300" height="250">
-          </a>
-          <a href="../assets/certs/Nutritionist-Certificate-2025.jpg" target="_blank">
-            <img src="../assets/certs/Nutritionist-Certificate-2025.jpg" alt="Nutritionist" width="300" height="250">
-          </a>
-          <a href="../assets/certs/CPR-First-Aid-2025.jpg" target="_blank">
-            <img src="../assets/certs/CPR-First-Aid-2025.jpg" alt="CPR and First Aid" width="300" height="250">
-          </a>
-        </div>
-      </div>
-
-      <div class="cert-group">
-        <h3>Mental Health & Recovery</h3>
-        <div class="cert-grid">
-          <a href="../assets/certs/Motivational-Interviewing.jpg" target="_blank">
-            <img src="../assets/certs/Motivational-Interviewing.jpg" alt="Motivational Interviewing" width="300" height="250">
-          </a>
-          <a href="../assets/certs/MAT.jpg" target="_blank">
-            <img src="../assets/certs/MAT.jpg" alt="MAT" width="300" height="250">
-          </a>
-          <a href="../assets/certs/Facing-Addiction.jpg" target="_blank">
-            <img src="../assets/certs/Facing-Addiction.jpg" alt="Facing Addiction" width="300" height="250">
-          </a>
-          <a href="../assets/certs/Peer-Support-for-OUD.jpg" target="_blank">
-            <img src="../assets/certs/Peer-Support-for-OUD.jpg" alt="Peer Support" width="300" height="250">
-          </a>
-        </div>
-      </div>
-
     </section>
 
-    <section>
-      <h2 id="contact">Contact</h2>
-      <p><a href="mailto:carter_kristina@proton.me">Email</a> |
-         <a href="https://github.com/kcamacho1" target="_blank">GitHub</a> |
-         <a href="https://linkedin.com/in/kristinacassiecamacho" target="_blank">LinkedIn</a></p>
+    <!-- Health & Wellness -->
+    <section class="mb-16">
+      <h3 class="text-2xl font-semibold text-gray-700 mb-6 border-b border-emerald-200 pb-2">Health & Wellness</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <div class="bg-white rounded-xl shadow p-4 hover:shadow-lg transition duration-300">
+          <img src="../assets/certs/Certified-Personal-Trainer-2025.jpg" alt="CPT" class="rounded-lg mx-auto mb-3 hover:grayscale transition duration-200">
+          <p class="text-center text-sm font-medium">Certified Personal Trainer</p>
+        </div>
+        <div class="bg-white rounded-xl shadow p-4 hover:shadow-lg transition duration-300">
+          <img src="../assets/certs/Nutritionist-Certificate-2025.jpg" alt="Nutritionist" class="rounded-lg mx-auto mb-3 hover:grayscale transition duration-200">
+          <p class="text-center text-sm font-medium">Certified Nutritionist</p>
+        </div>
+        <div class="bg-white rounded-xl shadow p-4 hover:shadow-lg transition duration-300">
+          <img src="../assets/certs/CPR-First-Aid-2025.jpg" alt="CPR" class="rounded-lg mx-auto mb-3 hover:grayscale transition duration-200">
+          <p class="text-center text-sm font-medium">CPR / First Aid</p>
+        </div>
+      </div>
     </section>
 
-    <footer>
-      <p>&copy; 2025 Kristina Camacho. All rights reserved.</p>
-    </footer>
-  </div>
+    <!-- Mental Health & Recovery -->
+    <section>
+      <h3 class="text-2xl font-semibold text-gray-700 mb-6 border-b border-emerald-200 pb-2">Mental Health & Recovery</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <div class="bg-white rounded-xl shadow p-4 hover:shadow-lg transition duration-300">
+          <img src="../assets/certs/Motivational-Interviewing.jpg" alt="Motivational Interviewing" class="rounded-lg mx-auto mb-3 hover:grayscale transition duration-200">
+          <p class="text-center text-sm font-medium">Motivational Interviewing</p>
+        </div>
+        <div class="bg-white rounded-xl shadow p-4 hover:shadow-lg transition duration-300">
+          <img src="../assets/certs/MAT.jpg" alt="MAT" class="rounded-lg mx-auto mb-3 hover:grayscale transition duration-200">
+          <p class="text-center text-sm font-medium">Medication-Assisted Treatment</p>
+        </div>
+        <div class="bg-white rounded-xl shadow p-4 hover:shadow-lg transition duration-300">
+          <img src="../assets/certs/Facing-Addiction.jpg" alt="Facing Addiction" class="rounded-lg mx-auto mb-3 hover:grayscale transition duration-200">
+          <p class="text-center text-sm font-medium">Facing Addiction Certificate</p>
+        </div>
+        <div class="bg-white rounded-xl shadow p-4 hover:shadow-lg transition duration-300">
+          <img src="../assets/certs/Peer-Support-for-OUD.jpg" alt="Peer Support" class="rounded-lg mx-auto mb-3 hover:grayscale transition duration-200">
+          <p class="text-center text-sm font-medium">Peer Support for OUD</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer"></div>
+
+  <script>
+    fetch('../partials/header.html')
+      .then(res => res.text())
+      .then(data => document.getElementById('header').innerHTML = data)
+      .catch(err => console.error('Header fetch error:', err));
+
+    fetch('../partials/footer.html')
+      .then(res => res.text())
+      .then(data => document.getElementById('footer').innerHTML = data)
+      .catch(err => console.error('Footer fetch error:', err));
+  </script>
 </body>
 </html>

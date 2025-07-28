@@ -1,123 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio | Kristina Camacho</title>
-  <link type="image/png" sizes="16x16" rel="icon" href="../images/favicon.ico">
-  <link rel="stylesheet" href="../styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Autonomous RC Car | Kristina Camacho</title>
+  <link rel="icon" href="../images/favicon.ico" type="image/x-icon" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
 </head>
 
-<body>
-  <div class="content-wrapper">
-  <header>
-    <h1>Autonomous RC Car</h1>
-    <p>
-      Self Driving | Collision Detection | Arduino C++
-      <br>
-      <b>Role:</b> Software Developer | Schematics & Wiring | Project Manager
-    </p>
-  </header>
+<body class="bg-gray-100 text-gray-800 font-sans">
+  <!-- Header Partial -->
+  <div id="header"></div>
 
-  <nav class="navigation">
-    <ul>
-      <li><a href="../index.html">Home</a></li>
-      <li><a href="../templates/about.html">About</a></li>
-      <li><a href="../templates/projects.html">Projects</a></li>
-      <li><a href="../templates/resume.html">Resume</a></li>
-      <li><a href="../templates/certs.html">Certifications</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+  <main class="max-w-6xl mx-auto p-6">
+    <!-- Title -->
+    <section class="mb-12 text-center">
+      <h1 class="text-4xl font-bold text-emerald-700 mb-2">Autonomous RC Car</h1>
+      <p class="text-gray-600">Self Driving | Collision Detection | Arduino C++</p>
+      <p class="text-sm text-gray-500 mt-1"><strong>Role:</strong> Software Developer | Schematics & Wiring | Project Manager</p>
+    </section>
 
-  <section>
-    <h2>Tank Bot</h2>
-        <p>Self driving RC car with Arduino board written in C++ with Collision Detection. 
-          Features include sound module, LED lights and recoil effects</p>
-    <h3>Quick Specs</h3>
-      <ul>
-        <li>
-          Consistant Speed (1mps)
-        </li>
-        <li>
-          Drive in a Straight Line (DC Motors)
-        </li>
-        <li>
-          90 degree Right turn
-        </li>
-        <li>
-          Durable
-        </li>
-        <li>
-          Turret Swivel on servo motor
-        </li>
-        <li>
-          Reverse
-        </li>
-        <li>
-          Ultrasonic sensor
-        </li>
-        <li>
-          Recoil (C++ Programming)
-        </li>
-        <li>
-          Tank Hatch 
-        </li>
-        <li>
-          Modular components (Bambu 3D printer)
-        </li>
-        <li>
-          Shooting Sound (Sound Module)
-        </li>
-        <li>
-          LED Light
-        </li>
-        <li>
-          Board: Arduino Uno REV3 [A000066]
-        </li>
-        <li>
-          Design: InventorCAD
-        </li>
-        <li>
-          <a href="https://github.com/kcamacho1/tank_bot" target="_blank">View on GitHub</a>
-        </li>
-      </ul>
-      <br>
-    <h3>Full Spec Sheet</h3>
-        <p>
-            <i id="subnote">* names and contact information removed for privacy *</i>
-        </p>
-        <object data="../assets/tankbot/specreport.pdf" type="application/pdf" width="100%" height="400px">
-            <p>Unable to display PDF file. <a href="../assets/tankbot/specreport.pdf">Download</a> instead.</p>
-        </object>
-    </section> 
-        
-  <section id="Gallery">    
-    <h2>Gallery</h2>
-      <p>
-        <video width="200px" height="200px" controls>
-          <source src="../assets/tankbot/demo.mp4" type="video/mp4" id="screenshot1">
-        </video>
+<!-- Gallery -->
+<section class="mb-16">
+  <h2 class="text-2xl font-semibold mb-4 text-center">Gallery</h2>
+  <div class="relative">
+    <!-- Left Arrow -->
+    <button id="scrollLeft" class="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-white shadow rounded-full p-2 hover:bg-emerald-100">
+      &#8592;
+    </button>
+
+    <!-- Scrollable Content -->
+      <div id="scrollGallery" class="flex overflow-x-auto space-x-4 px-8 py-2 scroll-smooth">
+        <a href="../assets/tankbot/demo.mp4" target="_blank">
+          <video class="h-48 rounded shadow flex-shrink-0" muted>
+            <source src="../assets/tankbot/demo.mp4" type="video/mp4">
+          </video>
+        </a>
+
         <a href="../assets/tankbot/exteriorFrontTank.png" target="_blank">
-          <img src="../assets/tankbot/exteriorFrontTank.png" id="screenshot2" width="200" height="200" />
+          <img src="../assets/tankbot/exteriorFrontTank.png" alt="Exterior Front" class="h-48 rounded shadow flex-shrink-0" />
         </a>
+
         <a href="../assets/tankbot/interiorTank.png" target="_blank">
-          <img src="../assets/tankbot/interiorTank.png" id="screenshot1" width="200" height="200" />
+          <img src="../assets/tankbot/interiorTank.png" alt="Interior Tank" class="h-48 rounded shadow flex-shrink-0" />
         </a>
+
         <a href="../assets/tankbot/CADdrawings.png" target="_blank">
-          <img src="../assets/tankbot/CADdrawings.png" id="screenshot2" width="200" height="200" />
+          <img src="../assets/tankbot/CADdrawings.png" alt="CAD Drawings" class="h-48 rounded shadow flex-shrink-0" />
         </a>
+      </div>
+
+      <!-- Right Arrow -->
+      <button id="scrollRight" class="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-white shadow rounded-full p-2 hover:bg-emerald-100">
+        &#8594;
+      </button>
+    </div>
+  </section>
+
+
+    <!-- Description -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-semibold mb-4">Tank Bot</h2>
+      <p class="mb-4">
+        Self-driving RC car powered by Arduino (C++) with real-time collision detection. Includes sound module, LED lighting, and recoil simulation for immersive robotics interaction.
       </p>
-  </section>
 
-  <section>
-    <h2 id="contact">Contact</h2>
-      <p><a href="mailto:carter_kristina@proton.me">Email</a> | <a href="https://github.com/kcamacho1" target="_blank">GitHub</a> | <a href="https://linkedin.com/in/kristinacassiecamacho" target="_blank">LinkedIn</a></p>
-  </section>
+      <h3 class="text-xl font-semibold mb-2">Quick Specs</h3>
+      <ul class="list-disc list-inside space-y-1">
+        <li>Consistent Speed (1 m/s)</li>
+        <li>Straight-line Drive (DC Motors)</li>
+        <li>90° Right Turn</li>
+        <li>Turret Swivel (servo motor)</li>
+        <li>Reverse</li>
+        <li>Ultrasonic Sensor</li>
+        <li>Recoil Logic (C++)</li>
+        <li>LED Light Effects</li>
+        <li>Shooting Sound Module</li>
+        <li>Tank Hatch with Modular Components</li>
+        <li>3D Printed Chassis (Bambu)</li>
+        <li>Board: Arduino Uno REV3 [A000066]</li>
+        <li>CAD Design: InventorCAD</li>
+        <li><a href="https://github.com/kcamacho1/tank_bot" target="_blank" class="text-emerald-600 underline">View on GitHub</a></li>
+      </ul>
+    </section>
 
-  <footer>
-    <p>&copy; 2025 Kristina Camacho. All rights reserved.</p>
-  </footer>
-  </div>
+    <!-- Spec Sheet -->
+    <section class="mb-12">
+      <h3 class="text-xl font-semibold mb-2">Full Spec Sheet</h3>
+      <p class="text-sm italic text-gray-500 mb-2">*Names and contact information removed for privacy*</p>
+      <object data="../assets/tankbot/specreport.pdf" type="application/pdf" width="100%" height="400px">
+        <p>Unable to display PDF file. <a href="../assets/tankbot/specreport.pdf" class="text-emerald-600 underline">Download instead</a>.</p>
+      </object>
+    </section>
+
+ 
+    <!-- Contact -->
+    <section class="text-center">
+      <h2 id="contact" class="text-2xl font-semibold mb-4">Contact</h2>
+      <p>
+        <a href="mailto:carter_kristina@proton.me" class="text-emerald-600 underline">Email</a> |
+        <a href="https://github.com/kcamacho1" target="_blank" class="text-emerald-600 underline">GitHub</a> |
+        <a href="https://linkedin.com/in/kristinacassiecamacho" target="_blank" class="text-emerald-600 underline">LinkedIn</a>
+      </p>
+    </section>
+  </main>
+
+  <!-- Footer Partial -->
+  <div id="footer"></div>
+
+  <script>
+    fetch('../partials/header.html')
+      .then(res => res.text())
+      .then(data => document.getElementById('header').innerHTML = data)
+      .catch(err => console.error('Header fetch error:', err));
+
+    fetch('../partials/footer.html')
+      .then(res => res.text())
+      .then(data => document.getElementById('footer').innerHTML = data)
+      .catch(err => console.error('Footer fetch error:', err));
+  </script>
 </body>
 </html>
