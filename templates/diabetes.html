@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diabetes vs. Sugar Intake Analysis | Kristina Camacho</title>
+  <link rel="icon" href="../images/favicon.ico" type="image/x-icon" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+
+<body class="bg-gray-100 text-gray-800 font-sans">
+  <!-- Header Partial -->
+  <div id="header"></div>
+
+  <main class="max-w-6xl mx-auto p-6">
+    
+    <!-- Title -->
+    <section class="mb-12 text-center bg-green-700 p-6 rounded-lg shadow-md">
+      <h1 class="text-4xl font-semibold text-white mb-2">Diabetes vs. Sugar Intake Analysis</h1>
+      <p class="text-white max-w-2xl mx-auto">
+        A data-driven exploration of the potential correlation between sugar consumption and diabetes prevalence using public health datasets, statistical modeling, and visual analytics.
+      </p>
+      <p class="text-sm text-white mt-6">
+        <strong>Role:</strong> Data Analyst | <strong>Focus:</strong> Data Cleaning, Visualization, and Statistical Analysis
+      </p>
+    </section>
+
+    <!-- Tech Stack & Tools -->
+    <section class="mb-4 bg-gray-50 p-6 rounded-lg shadow-inner flex flex-col items-center">
+      <div class="flex flex-wrap gap-3">
+        <div class="flex items-center gap-2 bg-green-50 border border-green-200 px-3 py-1 rounded-full shadow-sm hover:shadow-md transition">
+          <span class="text-sm font-medium text-green-800">Python</span>
+        </div>
+        <div class="flex items-center gap-2 bg-blue-50 border border-blue-200 px-3 py-1 rounded-full shadow-sm hover:shadow-md transition">
+          <span class="text-sm font-medium text-blue-800">Matplotlib</span>
+        </div>
+        <div class="flex items-center gap-2 bg-yellow-50 border border-yellow-200 px-3 py-1 rounded-full shadow-sm hover:shadow-md transition">
+          <span class="text-sm font-medium text-yellow-800">Pandas</span>
+        </div>
+        <div class="flex items-center gap-2 bg-purple-50 border border-purple-200 px-3 py-1 rounded-full shadow-sm hover:shadow-md transition">
+          <span class="text-sm font-medium text-purple-800">Data Visualization</span>
+        </div>
+        <div class="flex items-center gap-2 bg-pink-50 border border-pink-200 px-3 py-1 rounded-full shadow-sm hover:shadow-md transition">
+          <span class="text-sm font-medium text-pink-800">Statistical Analysis</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Highlights -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-semibold mb-4">Project Highlights</h2>
+      <ul class="list-disc list-inside space-y-1">
+        <li>Acquired and merged multiple public health datasets for analysis.</li>
+        <li>Cleaned and standardized data, removing incomplete or inconsistent entries.</li>
+        <li>Plotted scatter charts comparing sugar intake and diabetes prevalence.</li>
+        <li>Applied regression modeling to identify potential trends.</li>
+        <li>Highlighted socioeconomic and lifestyle factors impacting results.</li>
+      </ul>
+    </section>
+
+
+    <!-- Why It Matters -->
+    <section class="mb-12 bg-green-50 p-6 rounded-lg shadow-inner">
+      <h2 class="text-2xl font-semibold mb-2">Why It Matters</h2>
+      <p>
+        Understanding the relationship between sugar consumption and diabetes prevalence is essential for public health policy.  
+        While correlation does not imply causation, identifying patterns can help guide educational campaigns, dietary guidelines, and preventive healthcare strategies.
+      </p>
+    </section>
+
+    <!-- Key Analytical Takeaways -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-semibold mb-2">Key Analytical Takeaways</h2>
+      <ul class="list-disc list-inside space-y-1">
+        <li>Higher average sugar consumption often coincides with higher diabetes prevalence.</li>
+        <li>Visual analytics can simplify complex health trends for decision-makers.</li>
+        <li>Additional factors such as income, healthcare access, and lifestyle choices are crucial for deeper insights.</li>
+      </ul>
+    </section>
+
+    <!-- Gallery -->
+    <section class="mb-16">
+    <h2 class="text-2xl font-semibold mb-6 text-center">Gallery</h2>
+    
+    <div class="flex justify-center">
+        <div class="relative group max-w-sm">
+        <img src="../assets/diabetes/chart.png" 
+            alt="Scatter Plot" 
+            class="rounded-lg shadow-lg transform transition-transform duration-300 group-hover:scale-105" />
+        <span class="absolute bottom-0 left-0 w-full bg-black bg-opacity-60 text-white text-sm p-2 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            Chart
+        </span>
+        </div>
+    </div>
+    </section>
+
+    <!-- Project Links -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-semibold mb-2">Project Links</h2>
+      <p>
+        <a href="https://github.com/kcamacho1/matPlotLibFun" target="_blank" class="text-emerald-600 underline">View on GitHub</a>
+      </p>
+    </section>
+
+    <!-- Contact -->
+    <section class="text-center">
+      <h2 id="contact" class="text-2xl font-semibold mb-4">Contact</h2>
+      <p>
+        <a href="mailto:carter_kristina@proton.me" class="text-emerald-600 underline">Email</a> |
+        <a href="https://github.com/kcamacho1" target="_blank" class="text-emerald-600 underline">GitHub</a> |
+        <a href="https://linkedin.com/in/kristinacassiecamacho" target="_blank" class="text-emerald-600 underline">LinkedIn</a>
+      </p>
+    </section>
+  </main>
+
+  <!-- Footer Partial -->
+  <div id="footer"></div>
+
+  <!-- Script -->
+  <script>
+    fetch('../partials/header.html').then(res => res.text()).then(data => document.getElementById('header').innerHTML = data);
+    fetch('../partials/footer.html').then(res => res.text()).then(data => document.getElementById('footer').innerHTML = data);
+
+    const scrollGallery = document.getElementById('scrollGallery');
+    document.getElementById('scrollLeft').addEventListener('click', () => scrollGallery.scrollBy({ left: -300, behavior: 'smooth' }));
+    document.getElementById('scrollRight').addEventListener('click', () => scrollGallery.scrollBy({ left: 300, behavior: 'smooth' }));
+  </script>
+</body>
+</html>

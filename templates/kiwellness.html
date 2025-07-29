@@ -1,132 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ki Wellness Project | Kristina Camacho</title>
-  <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="../styles.css">
+  <link rel="icon" href="../images/favicon.ico" type="image/x-icon" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
 </head>
+
 <body class="bg-gray-100 text-gray-800 font-sans">
+  <!-- Header Partial -->
   <div id="header"></div>
 
-  <main class="max-w-5xl mx-auto px-6 py-10">
-    <header class="bg-white shadow rounded-xl p-6 mb-10 text-center">
-      <div class="max-w-4xl mx-auto">
-        <h1 class="text-4xl font-extrabold text-emerald-600 mb-2">Ki Wellness</h1>
-        <span class="inline-block bg-emerald-100 text-emerald-700 text-xs font-medium px-3 py-1 rounded-full mb-4">In Progress</span>
-        <p class="text-gray-700 text-base md:text-lg leading-relaxed">
-          Ki Wellness is an AI-powered holistic health platform that combines food journaling, macro tracking, personalized meal suggestions, exercise playlists, and spiritual coaching — all in one beautifully integrated app.
-        </p>
-        <p class="mt-3 text-sm text-gray-500">
-          <strong>Role:</strong> Full Stack Developer — Frontend, Backend, AI integration, and Deployment
-        </p>
-      </div>
-    </header>
+  <main class="max-w-6xl mx-auto p-6">
 
-
-
-    <section class="mb-12">
-      <h2 class="text-2xl font-semibold mb-4">Tech Stack</h2>
-      <p class="mb-2 text-gray-700">Frontend / Backend / APIs:</p>
-      <p class="bg-white shadow-sm p-4 rounded text-sm text-gray-700">
-        Next.js · TailwindCSS · FastAPI · Python · Flask · HTML · Axios · Supabase · OpenFoodFacts API · Nutritionix API · OpenAI
-      </p>
-      <p class="mt-2 text-sm text-gray-500">Hosting: Vercel + Render</p>
+    <!-- HERO SECTION -->
+    <section class="bg-green-700 text-white rounded-xl p-10 text-center shadow-lg mb-12">
+      <h1 class="text-4xl font-bold mb-2">Ki Wellness</h1>
+      <p class="mb-3 text-lg italic">AI-powered holistic health platform integrating nutrition, fitness, and spiritual well-being</p>
+      <p class="text-sm"><strong>Role:</strong> Full Stack Developer — Frontend, Backend, AI Integration, Deployment</p>
+      <span class="inline-block bg-emerald-100 text-emerald-700 text-xs font-medium px-3 py-1 rounded-full mt-3">In Progress</span>
     </section>
 
-<!-- Gallery -->
-<section class="mb-16">
-  <h2 class="text-2xl font-semibold mb-4 text-center">Gallery</h2>
-  <div class="relative">
-    <!-- Left Arrow -->
-    <button id="scrollLeft" class="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-white shadow rounded-full p-2 hover:bg-emerald-100">
-      &#8592;
-    </button>
+    <!-- QUICK FACTS -->
+    <section class="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-12 text-center">
+      <div class="bg-white rounded-lg shadow p-4">
+        <p class="font-semibold text-emerald-700">Tech Stack</p>
+        <p class="text-sm">Next.js · TailwindCSS · FastAPI · Python · Supabase · OpenAI</p>
+      </div>
+      <div class="bg-white rounded-lg shadow p-4">
+        <p class="font-semibold text-emerald-700">APIs</p>
+        <p class="text-sm">Nutritionix · OpenFoodFacts · Stripe · Zoom</p>
+      </div>
+      <div class="bg-white rounded-lg shadow p-4">
+        <p class="font-semibold text-emerald-700">Timeline</p>
+        <p class="text-sm">Ongoing</p>
+      </div>
+      <div class="bg-white rounded-lg shadow p-4">
+        <p class="font-semibold text-emerald-700">Hosting</p>
+        <p class="text-sm">Vercel + Render</p>
+      </div>
+    </section>
 
-    <!-- Scrollable Gallery -->
-    <div id="scrollGallery" class="flex overflow-x-auto space-x-4 px-8 py-2 scroll-smooth">
-      <a href="../assets/kiwellness2/yourDashboard-FoodJournal.png" target="_blank">
-        <img src="../assets/kiwellness2/yourDashboard-FoodJournal.png" alt="Food Journal Dashboard" class="max-h-48 object-contain rounded shadow flex-shrink-0" />
-      </a>
-      <a href="../assets/kiwellness2/landingpage.png" target="_blank">
-        <img src="../assets/kiwellness2/landingpage.png" alt="Landing Page" class="max-h-48 object-contain rounded shadow flex-shrink-0" />
-      </a>
-      <a href="../assets/kiwellness2/booking.png" target="_blank">
-        <img src="../assets/kiwellness2/booking.png" alt="Booking Page" class="max-h-48 object-contain rounded shadow flex-shrink-0" />
-      </a>
-      <a href="../assets/kiwellness2/roadmap.png" target="_blank">
-        <img src="../assets/kiwellness2/roadmap.png" alt="Roadmap" class="max-h-48 object-contain rounded shadow flex-shrink-0" />
-      </a>
-    </div>
+    <!-- PROJECT OVERVIEW -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-semibold mb-4">Overview</h2>
+      <p class="mb-4">
+        Ki Wellness is an AI-powered holistic health platform that combines food journaling, macro tracking, personalized meal suggestions, exercise playlists, and spiritual coaching — all in one beautifully integrated app. 
+        It is designed to help users maintain physical, mental, and spiritual well-being through intelligent, data-driven recommendations.
+      </p>
+    </section>
 
-    <!-- Right Arrow -->
-    <button id="scrollRight" class="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-white shadow rounded-full p-2 hover:bg-emerald-100">
-      &#8594;
-    </button>
-  </div>
-</section>
+    <!-- MY ROLE -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-semibold mb-4">My Role & Responsibilities</h2>
+      <ul class="list-disc list-inside space-y-1">
+        <li>Designed and built the frontend using Next.js & TailwindCSS</li>
+        <li>Developed backend APIs with FastAPI & Python</li>
+        <li>Integrated Supabase for authentication and database management</li>
+        <li>Connected third-party APIs (Nutritionix, OpenFoodFacts) for nutrition data</li>
+        <li>Implemented AI meal and wellness suggestions with OpenAI</li>
+        <li>Set up deployment and hosting on Vercel & Render</li>
+      </ul>
+    </section>
 
+    <!-- KEY FEATURES -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-semibold mb-4">Key Features</h2>
+      <ul class="list-disc list-inside space-y-1">
+        <li><strong>Food Journal:</strong> Users log meals and get real-time macro breakdowns</li>
+        <li><strong>AI Recommendations:</strong> Personalized meal, workout, and mindfulness suggestions</li>
+        <li><strong>Smart Database:</strong> Tracks user progress and customizes recommendations</li>
+        <li><strong>Exercise Playlist:</strong> Curated weekly workout routines</li>
+        <li><strong>Spiritual Guidance:</strong> AI-powered wellness prompts and daily reflections</li>
+      </ul>
+      <p class="mt-4">
+        <a href="https://kiwellness.org" target="_blank" class="text-emerald-600 underline">View Live Site</a>
+      </p>
+    </section>
 
-        <!-- Right Arrow -->
+    <!-- GALLERY -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-semibold mb-4 text-center">Gallery</h2>
+      <div class="relative">
+        <button id="scrollLeft" class="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-white shadow rounded-full p-2 hover:bg-emerald-100">
+          &#8592;
+        </button>
+        <div id="galleryScroll" class="flex overflow-x-auto space-x-4 px-8 py-2 scroll-smooth">
+          <img src="../assets/kiwellness2/yourDashboard-FoodJournal.png" alt="Food Journal Dashboard" class="h-48 rounded shadow flex-shrink-0" />
+          <img src="../assets/kiwellness2/landingpage.png" alt="Landing Page" class="h-48 rounded shadow flex-shrink-0" />
+          <img src="../assets/kiwellness2/booking.png" alt="Booking Page" class="h-48 rounded shadow flex-shrink-0" />
+          <img src="../assets/kiwellness2/roadmap.png" alt="Roadmap" class="h-48 rounded shadow flex-shrink-0" />
+        </div>
         <button id="scrollRight" class="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-white shadow rounded-full p-2 hover:bg-emerald-100">
           &#8594;
         </button>
       </div>
     </section>
 
-
-
+    <!-- FUTURE PLANS -->
     <section class="mb-12">
-      <h2 class="text-2xl font-semibold mb-4">Key Features</h2>
-      <ul class="list-disc pl-6 space-y-2 text-gray-700">
-        <li><strong>Food Journal:</strong> Users log meals and receive real-time macro breakdowns.</li>
-        <li><strong>Smart Database:</strong> Logs user data for personalized recommendations.</li>
-        <li><strong>AI Integration:</strong> Suggests meals, workouts, and spiritual practices based on user goals.</li>
+      <h2 class="text-2xl font-semibold mb-4">Future Plans</h2>
+      <ul class="list-disc list-inside space-y-1">
+        <li>Integration with Fitbit and other wearable devices</li>
+        <li>Expanded AI-driven spiritual and mental health modules</li>
+        <li>Meal planning automation with grocery list generation</li>
+        <li>Enhanced analytics and progress visualizations</li>
       </ul>
-      <div class="mt-4">
-        <a href="https://kiwellness.org" target="_blank" class="text-emerald-600 underline">View Live Site</a>
-      </div>
     </section>
 
+    <!-- BACK TO PROJECTS -->
+    <div class="text-center mt-8">
+      <a href="../templates/projects.html" class="bg-green-600 text-white px-6 py-3 rounded-lg shadow hover:bg-emerald-700 transition">
+        ← Back to Projects
+      </a>
+    </div>
 
-    <section id="contact" class="py-10 text-center">
-      <h2 class="text-2xl font-semibold mb-4">Contact</h2>
-      <div class="flex justify-center space-x-6">
-        <a href="mailto:carter_kristina@proton.me">
-          <img src="../images/icons/mail.png" alt="Email" class="w-8 h-8 hover:scale-110 transition-transform">
-        </a>
-        <a href="https://github.com/kcamacho1" target="_blank">
-          <img src="../images/icons/github.png" alt="GitHub" class="w-8 h-8 hover:scale-110 transition-transform">
-        </a>
-        <a href="https://linkedin.com/in/kristinacassiecamacho" target="_blank">
-          <img src="../images/icons/linkedin.png" alt="LinkedIn" class="w-8 h-8 hover:scale-110 transition-transform">
-        </a>
-      </div>
-    </section>
   </main>
 
+  <!-- Footer Partial -->
   <div id="footer"></div>
 
   <script>
+    // Fetch partials
     fetch('../partials/header.html')
       .then(res => res.text())
-      .then(data => document.getElementById('header').innerHTML = data)
-      .catch(err => console.error('Header fetch error:', err));
+      .then(data => document.getElementById('header').innerHTML = data);
 
     fetch('../partials/footer.html')
       .then(res => res.text())
-      .then(data => document.getElementById('footer').innerHTML = data)
-      .catch(err => console.error('Footer fetch error:', err));
+      .then(data => document.getElementById('footer').innerHTML = data);
 
-    const scrollGallery = document.getElementById('scrollGallery');
-    document.getElementById('scrollLeft').addEventListener('click', () => {
-      scrollGallery.scrollBy({ left: -300, behavior: 'smooth' });
-    });
-    document.getElementById('scrollRight').addEventListener('click', () => {
-      scrollGallery.scrollBy({ left: 300, behavior: 'smooth' });
-    });
+    // Gallery scroll
+    const galleryScroll = document.getElementById('galleryScroll');
+    document.getElementById('scrollLeft').onclick = () => galleryScroll.scrollBy({ left: -200, behavior: 'smooth' });
+    document.getElementById('scrollRight').onclick = () => galleryScroll.scrollBy({ left: 200, behavior: 'smooth' });
   </script>
 </body>
 </html>

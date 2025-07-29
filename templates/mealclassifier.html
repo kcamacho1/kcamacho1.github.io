@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meal Classifier | Kristina Camacho</title>
+  <link rel="icon" href="../images/favicon.ico" type="image/x-icon" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+
+<body class="bg-gray-100 text-gray-800 font-sans">
+  <div id="header"></div>
+
+  <main class="max-w-6xl mx-auto p-6">
+
+    <!-- Title -->
+    <section class="mb-12 text-center bg-green-700 p-6 rounded-lg shadow-md">
+      <h1 class="text-4xl font-semibold text-white mb-4">Meal Classifier</h1>
+      <p class="text-white max-w-2xl mx-auto mb-4">
+        A simple Streamlit app that uses computer vision to determine if a meal is <strong>healthy</strong> or <strong>unhealthy</strong> based on its image.
+      </p>
+      <p class="text-sm text-white mt-1">
+        <strong>Role:</strong> Developer & ML Enthusiast | <strong>Focus:</strong> Streamlit, Computer Vision
+      </p>
+    </section>
+
+    <!-- Tech Stack -->
+    <section class="mb-4 bg-gray-50 p-6 rounded-lg shadow-inner justify-center flex flex-wrap gap-3">
+      <span class="px-3 py-1 bg-green-100 border border-green-200 rounded-full">Python 3</span>
+      <span class="px-3 py-1 bg-green-100 border border-green-200 rounded-full">Streamlit</span>
+      <span class="px-3 py-1 bg-green-100 border border-green-200 rounded-full">TensorFlow</span>
+      <span class="px-3 py-1 bg-green-100 border border-green-200 rounded-full">Keras</span>
+      <span class="px-3 py-1 bg-green-100 border border-green-200 rounded-full">OpenCV</span>
+      <span class="px-3 py-1 bg-green-100 border border-green-200 rounded-full">NumPy</span>
+      <span class="px-3 py-1 bg-green-100 border border-green-200 rounded-full">Matplotlib</span>
+    </section>
+
+    <!-- Highlights -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-semibold mb-4">Project Highlights</h2>
+      <ul class="list-disc list-inside space-y-1">
+        <li>Developed a quick and easy meal classification tool for healthy vs. unhealthy food detection.</li>
+        <li>Built a lightweight Streamlit interface for real-time predictions.</li>
+        <li>Applied a pre-trained CNN model to classify meal images with minimal training data.</li>
+        <li>Used OpenCV for simple image preprocessing and resizing.</li>
+        <li>Designed for easy experimentation and potential integration into larger health tracking apps.</li>
+      </ul>
+    </section>
+
+        <!-- Engineering Takeaways -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-semibold mb-2">Key Takeaways</h2>
+      <ul class="list-disc list-inside space-y-1">
+        <li>Streamlit is ideal for quickly turning ML models into usable web apps.</li>
+        <li>Lightweight image preprocessing can work well for basic classification tasks.</li>
+        <li>Transfer learning greatly reduces the need for large custom datasets.</li>
+        <li>Single-page ML apps are a great starting point for broader AI-driven platforms.</li>
+      </ul>
+    </section>
+
+    <!-- Links -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-semibold mb-2">Project Links</h2>
+      <p>
+        <a href="https://github.com/kcamacho1/meal-classifier" target="_blank" class="text-green-600 underline">View on GitHub</a>
+      </p>
+    </section>
+
+    <!-- Gallery -->
+    <section class="mb-16 text-center">
+      <h2 class="text-2xl font-semibold mb-4">App Preview</h2>
+      <img src="../assets/mealclassifier/mealclassifier.png" alt="Meal Classifier App Screenshot" class="rounded shadow-lg max-w-lg mx-auto" />
+    </section>
+
+
+
+    <!-- Contact -->
+    <section class="text-center">
+      <h2 id="contact" class="text-2xl font-semibold mb-4">Contact</h2>
+      <p>
+        <a href="mailto:carter_kristina@proton.me" class="text-green-600 underline">Email</a> |
+        <a href="https://github.com/kcamacho1" target="_blank" class="text-green-600 underline">GitHub</a> |
+        <a href="https://linkedin.com/in/kristinacassiecamacho" target="_blank" class="text-green-600 underline">LinkedIn</a>
+      </p>
+    </section>
+  </main>
+
+  <div id="footer"></div>
+
+  <script>
+    fetch('../partials/header.html').then(res => res.text()).then(data => document.getElementById('header').innerHTML = data);
+    fetch('../partials/footer.html').then(res => res.text()).then(data => document.getElementById('footer').innerHTML = data);
+  </script>
+</body>
+</html>

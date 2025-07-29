@@ -13,96 +13,155 @@
   <!-- Header Partial -->
   <div id="header"></div>
 
-  <main class="max-w-6xl mx-auto p-6">
+  <main class="max-w-6xl mx-auto px-6 py-10">
     <!-- Title -->
-    <section class="mb-12 text-center">
-      <h1 class="text-4xl font-bold text-emerald-700 mb-2">Autonomous RC Car</h1>
-      <p class="text-gray-600">Self Driving | Collision Detection | Arduino C++</p>
-      <p class="text-sm text-gray-500 mt-1"><strong>Role:</strong> Software Developer | Schematics & Wiring | Project Manager</p>
+    <header class="bg-green-700 text-white shadow rounded-xl p-6 mb-10 text-center">
+      <h1 class="text-4xl font-semibold text-emerald-700 mb-2">Autonomous RC Car</h1>
+      <span class="inline-block bg-emerald-100 text-white text-xs font-medium px-3 py-1 rounded-full mb-3">Completed</span>
+      <p class="text-white-600 text-base md:text-lg leading-relaxed">Self-Driving | Collision Detection | Arduino C++</p>
+      <p class="mt-2 text-sm text-white-500">
+        <strong>Role:</strong> Software Developer · Schematics & Wiring · Project Manager
+      </p>
+    </header>
+
+
+    
+    <!-- Gallery -->
+    <section class="mb-16">
+      <h2 class="text-2xl font-semibold mb-4 text-center">Gallery</h2>
+      <div class="relative">
+        <!-- Left Arrow -->
+        <button id="scrollLeft" class="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-white shadow rounded-full p-2 hover:bg-emerald-100">
+          &#8592;
+        </button>
+
+        <!-- Scrollable Content -->
+        <div id="scrollGallery" class="flex overflow-x-auto space-x-4 px-8 py-2 scroll-smooth">
+          <a href="../assets/tankbot/demo.mp4" target="_blank">
+            <video class="h-48 rounded shadow flex-shrink-0" muted>
+              <source src="../assets/tankbot/demo.mp4" type="video/mp4">
+            </video>
+          </a>
+          <a href="../assets/tankbot/exteriorFrontTank.png" target="_blank">
+            <img src="../assets/tankbot/exteriorFrontTank.png" alt="Exterior Front" class="h-48 rounded shadow flex-shrink-0" />
+          </a>
+          <a href="../assets/tankbot/interiorTank.png" target="_blank">
+            <img src="../assets/tankbot/interiorTank.png" alt="Interior Tank" class="h-48 rounded shadow flex-shrink-0" />
+          </a>
+          <a href="../assets/tankbot/CADdrawings.png" target="_blank">
+            <img src="../assets/tankbot/CADdrawings.png" alt="CAD Drawings" class="h-48 rounded shadow flex-shrink-0" />
+          </a>
+        </div>
+
+        <!-- Right Arrow -->
+        <button id="scrollRight" class="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-white shadow rounded-full p-2 hover:bg-emerald-100">
+          &#8594;
+        </button>
+      </div>
     </section>
 
-<!-- Gallery -->
-<section class="mb-16">
-  <h2 class="text-2xl font-semibold mb-4 text-center">Gallery</h2>
-  <div class="relative">
-    <!-- Left Arrow -->
-    <button id="scrollLeft" class="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-white shadow rounded-full p-2 hover:bg-emerald-100">
-      &#8592;
-    </button>
-
-    <!-- Scrollable Content -->
-      <div id="scrollGallery" class="flex overflow-x-auto space-x-4 px-8 py-2 scroll-smooth">
-        <a href="../assets/tankbot/demo.mp4" target="_blank">
-          <video class="h-48 rounded shadow flex-shrink-0" muted>
-            <source src="../assets/tankbot/demo.mp4" type="video/mp4">
-          </video>
-        </a>
-
-        <a href="../assets/tankbot/exteriorFrontTank.png" target="_blank">
-          <img src="../assets/tankbot/exteriorFrontTank.png" alt="Exterior Front" class="h-48 rounded shadow flex-shrink-0" />
-        </a>
-
-        <a href="../assets/tankbot/interiorTank.png" target="_blank">
-          <img src="../assets/tankbot/interiorTank.png" alt="Interior Tank" class="h-48 rounded shadow flex-shrink-0" />
-        </a>
-
-        <a href="../assets/tankbot/CADdrawings.png" target="_blank">
-          <img src="../assets/tankbot/CADdrawings.png" alt="CAD Drawings" class="h-48 rounded shadow flex-shrink-0" />
-        </a>
-      </div>
-
-      <!-- Right Arrow -->
-      <button id="scrollRight" class="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-white shadow rounded-full p-2 hover:bg-emerald-100">
-        &#8594;
-      </button>
-    </div>
-  </section>
-
-
-    <!-- Description -->
+    <!-- Project Description -->
     <section class="mb-12">
-      <h2 class="text-2xl font-semibold mb-4">Tank Bot</h2>
+      <h2 class="text-2xl font-semibold mb-4">Tank Bot Overview</h2>
       <p class="mb-4">
-        Self-driving RC car powered by Arduino (C++) with real-time collision detection. Includes sound module, LED lighting, and recoil simulation for immersive robotics interaction.
+        This project is a fully autonomous RC car powered by Arduino (C++) with real-time collision detection.
+        It integrates a sound module, LED lighting, and recoil simulation for immersive robotics interaction.
       </p>
 
       <h3 class="text-xl font-semibold mb-2">Quick Specs</h3>
-      <ul class="list-disc list-inside space-y-1">
-        <li>Consistent Speed (1 m/s)</li>
-        <li>Straight-line Drive (DC Motors)</li>
-        <li>90° Right Turn</li>
-        <li>Turret Swivel (servo motor)</li>
-        <li>Reverse</li>
-        <li>Ultrasonic Sensor</li>
-        <li>Recoil Logic (C++)</li>
-        <li>LED Light Effects</li>
-        <li>Shooting Sound Module</li>
-        <li>Tank Hatch with Modular Components</li>
-        <li>3D Printed Chassis (Bambu)</li>
+      <ul class="list-disc pl-6 space-y-1 text-gray-700">
+        <li>Consistent speed: 1 m/s</li>
+        <li>Straight-line drive (DC motors)</li>
+        <li>90° right turn capability</li>
+        <li>Turret swivel via servo motor</li>
+        <li>Reverse functionality</li>
+        <li>Ultrasonic sensor for obstacle detection</li>
+        <li>Recoil logic in C++</li>
+        <li>LED light effects</li>
+        <li>Shooting sound module</li>
+        <li>Tank hatch with modular components</li>
+        <li>3D printed chassis (Bambu)</li>
         <li>Board: Arduino Uno REV3 [A000066]</li>
-        <li>CAD Design: InventorCAD</li>
+        <li>CAD design in InventorCAD</li>
         <li><a href="https://github.com/kcamacho1/tank_bot" target="_blank" class="text-emerald-600 underline">View on GitHub</a></li>
       </ul>
     </section>
+
+    <!-- Tech Stack -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-semibold mb-4">Tech Stack</h2>
+
+      <div class="bg-white shadow-sm p-6 rounded-lg space-y-6 text-gray-700">
+
+        <!-- Programming & Embedded Systems -->
+        <div>
+          <h3 class="text-lg font-semibold text-emerald-700 mb-2">Programming & Embedded Systems</h3>
+          <ul class="list-disc list-inside space-y-1 text-sm">
+            <li><strong>C++</strong> – Core logic, control structures, hardware interaction, and performance optimization.</li>
+            <li><strong>Arduino IDE</strong> – Microcontroller programming, hardware interfacing, and real-time debugging.</li>
+            <li><strong>Arduino Libraries</strong> – Ultrasonic sensor control, servo motor management, LED and sound module integration.</li>
+          </ul>
+        </div>
+
+        <!-- Hardware & Electronics -->
+        <div>
+          <h3 class="text-lg font-semibold text-emerald-700 mb-2">Hardware & Electronics</h3>
+          <ul class="list-disc list-inside space-y-1 text-sm">
+            <li><strong>Arduino Uno REV3</strong> – Primary microcontroller board for system control.</li>
+            <li><strong>DC Motors / Servo Motors</strong> – Motion control and turret rotation.</li>
+            <li><strong>Ultrasonic Sensors</strong> – Obstacle detection and distance measurement.</li>
+            <li><strong>LED Lighting & Sound Modules</strong> – Visual and audio feedback systems.</li>
+            <li><strong>Breadboard & Wiring Harness</strong> – Prototyping and circuit connections.</li>
+          </ul>
+        </div>
+
+        <!-- CAD & Mechanical Design -->
+        <div>
+          <h3 class="text-lg font-semibold text-emerald-700 mb-2">CAD & Mechanical Design</h3>
+          <ul class="list-disc list-inside space-y-1 text-sm">
+            <li><strong>Autodesk Inventor / AutoCAD</strong> – 3D modeling and mechanical part design.</li>
+            <li><strong>3D Printing (Bambu Lab)</strong> – Custom chassis and component fabrication.</li>
+            <li><strong>Mechanical Assembly</strong> – Integration of chassis, motors, sensors, and housing.</li>
+          </ul>
+        </div>
+
+        <!-- Project Management & Documentation -->
+        <div>
+          <h3 class="text-lg font-semibold text-emerald-700 mb-2">Project Management & Documentation</h3>
+          <ul class="list-disc list-inside space-y-1 text-sm">
+            <li><strong>GitHub</strong> – Version control and collaboration.</li>
+            <li><strong>Markdown / PDF Documentation</strong> – Spec sheets, schematics, and build guides.</li>
+            <li><strong>Agile Practices</strong> – Iterative prototyping and testing cycles.</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
 
     <!-- Spec Sheet -->
     <section class="mb-12">
       <h3 class="text-xl font-semibold mb-2">Full Spec Sheet</h3>
       <p class="text-sm italic text-gray-500 mb-2">*Names and contact information removed for privacy*</p>
       <object data="../assets/tankbot/specreport.pdf" type="application/pdf" width="100%" height="400px">
-        <p>Unable to display PDF file. <a href="../assets/tankbot/specreport.pdf" class="text-emerald-600 underline">Download instead</a>.</p>
+        <p>Unable to display PDF. <a href="../assets/tankbot/specreport.pdf" class="text-emerald-600 underline">Download instead</a>.</p>
       </object>
     </section>
 
- 
     <!-- Contact -->
-    <section class="text-center">
-      <h2 id="contact" class="text-2xl font-semibold mb-4">Contact</h2>
-      <p>
-        <a href="mailto:carter_kristina@proton.me" class="text-emerald-600 underline">Email</a> |
-        <a href="https://github.com/kcamacho1" target="_blank" class="text-emerald-600 underline">GitHub</a> |
-        <a href="https://linkedin.com/in/kristinacassiecamacho" target="_blank" class="text-emerald-600 underline">LinkedIn</a>
-      </p>
+    <section id="contact" class="py-10 text-center">
+      <h2 class="text-2xl font-semibold mb-4">Contact</h2>
+      <div class="flex justify-center space-x-6">
+        <a href="mailto:carter_kristina@proton.me">
+          <img src="../images/icons/mail.png" alt="Email" class="w-8 h-8 hover:scale-110 transition-transform">
+        </a>
+        <a href="https://github.com/kcamacho1" target="_blank">
+          <img src="../images/icons/github.png" alt="GitHub" class="w-8 h-8 hover:scale-110 transition-transform">
+        </a>
+        <a href="https://linkedin.com/in/kristinacassiecamacho" target="_blank">
+          <img src="../images/icons/linkedin.png" alt="LinkedIn" class="w-8 h-8 hover:scale-110 transition-transform">
+        </a>
+      </div>
     </section>
   </main>
 
@@ -110,6 +169,7 @@
   <div id="footer"></div>
 
   <script>
+    // Load header/footer
     fetch('../partials/header.html')
       .then(res => res.text())
       .then(data => document.getElementById('header').innerHTML = data)
@@ -119,6 +179,15 @@
       .then(res => res.text())
       .then(data => document.getElementById('footer').innerHTML = data)
       .catch(err => console.error('Footer fetch error:', err));
+
+    // Gallery scrolling
+    const scrollGallery = document.getElementById('scrollGallery');
+    document.getElementById('scrollLeft').addEventListener('click', () => {
+      scrollGallery.scrollBy({ left: -300, behavior: 'smooth' });
+    });
+    document.getElementById('scrollRight').addEventListener('click', () => {
+      scrollGallery.scrollBy({ left: 300, behavior: 'smooth' });
+    });
   </script>
 </body>
 </html>
