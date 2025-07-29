@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>To-Do List App | Kristina Camacho</title>
+  <link rel="icon" href="../images/favicon.ico" type="image/x-icon" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+
+<body class="bg-gray-100 text-gray-800 font-sans">
+  <!-- Header Partial -->
+  <div id="header"></div>
+
+  <main class="max-w-5xl mx-auto p-6">
+
+    <!-- Title -->
+    <section class="mb-12 text-center bg-green-700 p-6 rounded-lg shadow-md">
+      <h1 class="text-4xl font-semibold text-white mb-2">Flask To-Do List App</h1>
+      <p class="text-white max-w-2xl mx-auto">
+        A responsive and intuitive task management application built using Flask, Python, and Tailwind CSS, demonstrating full CRUD functionality and clean UI design.
+      </p>
+      <p class="text-sm text-white mt-6">
+        <strong>Role:</strong> Developer | <strong>Focus:</strong> Backend Logic, Frontend Design, Database Integration
+      </p>
+    </section>
+
+        <!-- Tech Stack -->
+    <section class="mb-8 bg-white p-6 rounded-lg shadow flex flex-col items-center">
+      <h2 class="text-2xl font-semibold mb-4">Tech Stack</h2>
+      <div class="flex flex-wrap gap-3">
+        <span class="flex items-center bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">Python</span>
+        <span class="flex items-center bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">Flask</span>
+        <span class="flex items-center bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm font-medium">SQLite</span>
+        <span class="flex items-center bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium">Tailwind CSS</span>
+        <span class="flex items-center bg-pink-100 text-pink-800 px-3 py-1 rounded-full text-sm font-medium">HTML5</span>
+      </div>
+    </section>
+
+    <!-- Project Overview -->
+    <section class="mb-8 bg-white p-6 rounded-lg shadow">
+      <h2 class="text-2xl font-semibold mb-4">Overview</h2>
+      <p>
+        This project is a fully functional To-Do List web app that allows users to create, read, update, and delete tasks. 
+        It was built to strengthen my skills in Python web development and demonstrate my ability to integrate backend logic with a clean, responsive frontend interface.
+      </p>
+    </section>
+
+    <!-- Features -->
+    <section class="mb-8 bg-gray-50 p-6 rounded-lg shadow-inner">
+      <h2 class="text-2xl font-semibold mb-4">Key Features</h2>
+      <ul class="list-disc list-inside space-y-2">
+        <li>Full CRUD functionality — add, edit, mark complete, and delete tasks.</li>
+        <li>Flask-based backend with Python routing and Jinja2 templating.</li>
+        <li>SQLite database for lightweight and persistent data storage.</li>
+        <li>Responsive Tailwind CSS design for desktop and mobile devices.</li>
+        <li>Clean UI with intuitive task interaction and minimal clutter.</li>
+      </ul>
+    </section>
+
+
+    <!-- Screenshots -->
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold mb-4">Screenshots</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div class="rounded-lg overflow-hidden shadow-md">
+          <img src="../assets/todo/homepage.png" alt="App Homepage" class="w-full">
+        </div>
+        <div class="rounded-lg overflow-hidden shadow-md">
+          <img src="../assets/todo/add_task.png" alt="Adding Task" class="w-full">
+        </div>
+      </div>
+    </section>
+
+    <!-- Why It Matters -->
+    <section class="mb-8 bg-gray-50 p-6 rounded-lg shadow-inner">
+      <h2 class="text-2xl font-semibold mb-4">Why This Project Matters</h2>
+      <p>
+        Building this app enhanced my understanding of web development fundamentals, including routing, form handling, database CRUD operations, and responsive design. 
+        It also helped me strengthen my ability to create applications that are both functional and user-friendly — a key skill for full-stack development roles.
+      </p>
+    </section>
+
+    <!-- Project Links -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-semibold mb-2">Project Links</h2>
+      <p>
+        <a href="https://github.com/kcamacho1/my_flask_app" target="_blank" class="text-blue-600 underline font-medium">View on GitHub</a>
+      </p>
+    </section>
+
+    <!-- Contact -->
+    <section class="text-center">
+      <h2 id="contact" class="text-2xl font-semibold mb-4">Contact</h2>
+      <p>
+        <a href="mailto:carter_kristina@proton.me" class="text-blue-600 underline">Email</a> |
+        <a href="https://github.com/kcamacho1" target="_blank" class="text-blue-600 underline">GitHub</a> |
+        <a href="https://linkedin.com/in/kristinacassiecamacho" target="_blank" class="text-blue-600 underline">LinkedIn</a>
+      </p>
+    </section>
+  </main>
+
+  <!-- Footer Partial -->
+  <div id="footer"></div>
+
+  <!-- Script -->
+  <script>
+    fetch('../partials/header.html')
+      .then(res => res.text())
+      .then(data => document.getElementById('header').innerHTML = data);
+
+    fetch('../partials/footer.html')
+      .then(res => res.text())
+      .then(data => document.getElementById('footer').innerHTML = data);
+  </script>
+</body>
+</html>
