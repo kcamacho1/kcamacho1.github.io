@@ -3,60 +3,106 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Permaculture Internship Program | Kristina Camacho</title>
+  <title>Case Study | Permaculture Internship Program</title>
   <link rel="icon" href="../images/favicon.ico" type="image/x-icon" />
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="../styles.css" />
 </head>
 
 <body class="bg-gray-100 text-gray-800 font-sans">
-  <!-- Header Partial -->
   <div id="header"></div>
 
-  <main class="max-w-6xl mx-auto p-6">
-    <!-- Title -->
-    <section class="mb-12 text-center">
-      <h1 class="text-4xl font-bold text-emerald-700 mb-2">Permaculture Internship Program</h1>
-      <p class="text-gray-600">Organized education track with a nonprofit spiritual community</p>
-      <p class="text-sm text-gray-500 mt-1"><strong>Role:</strong> Organizational Strategist | Project Manager | Participant</p>
+  <!-- Hero Section -->
+  <main class="max-w-5xl mx-auto p-6 bg-white rounded-xl shadow mt-6">
+    <section class="relative bg-green-700 text-white p-8 rounded-xl mb-8 text-center">
+      <div class="flex flex-col sm:flex-row items-center sm:items-start gap-6">
+        
+        <!-- Logo / Icon -->
+        <div class="flex-shrink-0 bg-white p-3 rounded-lg shadow-md">
+          <img src="../assets/permaculture/icon.png" alt="Permaculture Icon" class="h-16 object-contain">
+        </div>
+
+        <!-- Text Content -->
+        <div>
+          <h1 class="text-4xl font-semibold leading-tight mb-2">
+            Permaculture Internship Program — Sustainable Living Education
+          </h1>
+          <p class="italic text-lg opacity-90">
+            Role: Organizational Strategist & Project Manager — Created the first structured permaculture internship for a nonprofit retreat center.
+          </p>
+        </div>
+      </div>
     </section>
 
+    <!-- Tech Stack & Tools -->
+    <section class="mb-8 bg-gray-50 p-6 rounded-lg shadow-inner flex flex-col items-center">
+      <div class="flex flex-wrap gap-3">
+        <div class="flex items-center gap-2 bg-green-50 border border-green-200 px-3 py-1 rounded-full shadow-sm hover:shadow-md transition">
+          <img src="../assets/icons/notion.svg" alt="Notion" class="h-5 w-5" />
+          <span class="text-sm font-medium text-green-800">Notion</span>
+        </div>
+        <div class="flex items-center gap-2 bg-green-50 border border-green-200 px-3 py-1 rounded-full shadow-sm hover:shadow-md transition">
+          <img src="../assets/icons/microsoft-teams.svg" alt="Microsoft Teams" class="h-5 w-5" />
+          <span class="text-sm font-medium text-green-800">MS Teams</span>
+        </div>
+        <div class="flex items-center gap-2 bg-green-50 border border-green-200 px-3 py-1 rounded-full shadow-sm hover:shadow-md transition">
+          <img src="../assets/icons/google-sheets.svg" alt="Google Sheets" class="h-5 w-5" />
+          <span class="text-sm font-medium text-green-800">Google Sheets</span>
+        </div>
+      </div>
+    </section>
 
-    <!-- Program Description -->
+    <!-- Project Overview -->
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold mb-2 text-emerald-700">Project Overview</h2>
+      <p>
+        Designed and implemented the first permaculture internship program at Claymont, a nonprofit spiritual and sustainability community. This included creating a clear organizational structure, aligning resources, and ensuring smooth collaboration across diverse teams of residents, volunteers, and educators.
+      </p>
+    </section>
+
+    <!-- My Role -->
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold mb-2 text-emerald-700">My Role & Responsibilities</h2>
+      <ul class="list-disc list-inside space-y-2">
+        <li>Surveyed community members to identify key bottlenecks and opportunities for collaboration.</li>
+        <li>Created a new team structure inspired by network engineering star topology to improve communication and clarity.</li>
+        <li>Coordinated cross-functional educational tracks in sustainable living, wellness, and craftsmanship.</li>
+        <li>Documented processes and provided ongoing mentorship to program participants.</li>
+      </ul>
+    </section>
+
+    <!-- Challenges -->
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold mb-2 text-emerald-700">Challenges & Solutions</h2>
+      <p>
+        The community had high enthusiasm but lacked a unified organizational framework, leading to miscommunication and duplicated work. I introduced a centralized coordination system and visual hierarchy model that gained buy-in from the majority of members and streamlined project execution.
+      </p>
+    </section>
+
+    <!-- Results -->
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold mb-2 text-emerald-700">Results & Impact</h2>
+      <ul class="list-disc list-inside space-y-2">
+        <li>Launched the first structured permaculture internship program in community history.</li>
+        <li>Increased team efficiency by reducing project overlaps and miscommunication.</li>
+        <li>Provided participants with multi-disciplinary sustainable living education and practical skills.</li>
+      </ul>
+    </section>
+
+    <!-- Gallery -->
     <section class="mb-12">
-      <h2 class="text-2xl font-semibold mb-4">Internship Program</h2>
-      <p class="mb-4">
-        At Claymont, a nonprofit nature preserve and retreat center, I created the organizing structure for their first permaculture internship program. I surveyed community members to identify a consistent pain point — lack of organizing clarity — which was impeding collaboration.
-      </p>
-      <p class="mb-4">
-        Using my background in network engineering, I adapted the concept of star topology to reframe the team hierarchy. Once presented, the structure received majority buy-in and enabled the successful launch and completion of the internship.
-      </p>
+      <h2 class="text-2xl font-semibold mb-4 text-center">Gallery Preview</h2>
+      <div class="relative">
+        <button id="scrollLeft" class="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-white shadow rounded-full p-2 hover:bg-emerald-100">&#8592;</button>
+        <div id="galleryScroll" class="flex overflow-x-auto space-x-4 px-8 py-2 scroll-smooth">
+          <img src="../assets/permaculture/tinyfloorplan.png" alt="Tiny House Floorplan" class="h-48 rounded shadow flex-shrink-0" />
+          <img src="../assets/permaculture/outdoorgrow.jpg" alt="Outdoor Grow" class="h-48 rounded shadow flex-shrink-0" />
+          <img src="../assets/permaculture/shiitaki.jpg" alt="Shiitake" class="h-48 rounded shadow flex-shrink-0" />
+          <img src="../assets/permaculture/oysters.jpg" alt="Oysters" class="h-48 rounded shadow flex-shrink-0" />
+        </div>
+        <button id="scrollRight" class="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-white shadow rounded-full p-2 hover:bg-emerald-100">&#8594;</button>
+      </div>
     </section>
-
-
-        <!-- Horizontal Gallery -->
-<section class="mb-12">
-  <h2 class="text-2xl font-semibold mb-4 text-center">Gallery Preview</h2>
-  <div class="relative">
-    <!-- Left arrow -->
-    <button id="scrollLeft" class="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-white shadow rounded-full p-2 hover:bg-emerald-100">
-      &#8592;
-    </button>
-
-    <!-- Scrollable container -->
-    <div id="galleryScroll" class="flex overflow-x-auto space-x-4 px-8 py-2 scroll-smooth">
-      <img src="../assets/permaculture/tinyfloorplan.png" alt="Tiny House Floorplan" class="h-48 rounded shadow flex-shrink-0" />
-      <img src="../assets/permaculture/outdoorgrow.jpg" alt="Outdoor Grow" class="h-48 rounded shadow flex-shrink-0" />
-      <img src="../assets/permaculture/shiitaki.jpg" alt="Shiitake" class="h-48 rounded shadow flex-shrink-0" />
-      <img src="../assets/permaculture/oysters.jpg" alt="Oysters" class="h-48 rounded shadow flex-shrink-0" />
-    </div>
-
-    <!-- Right arrow -->
-    <button id="scrollRight" class="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-white shadow rounded-full p-2 hover:bg-emerald-100">
-      &#8594;
-    </button>
-  </div>
-</section>
 
     <!-- Courses -->
     <section class="mb-12">
@@ -69,9 +115,7 @@
         <li>Food Forest Preservation</li>
         <li>Food Garden Cultivation</li>
         <li>Yoga</li>
-        <li>
-          <a href="https://claymont.org" target="_blank" class="text-emerald-600 underline">Visit Claymont Website</a>
-        </li>
+        <li><a href="https://claymont.org" target="_blank" class="text-emerald-600 underline">Visit Claymont Website</a></li>
       </ul>
     </section>
 
@@ -85,31 +129,19 @@
       </object>
     </section>
 
-
-    <!-- Contact -->
-    <section class="text-center">
-      <h2 id="contact" class="text-2xl font-semibold mb-4">Contact</h2>
-      <p>
-        <a href="mailto:carter_kristina@proton.me" class="text-emerald-600 underline">Email</a> |
-        <a href="https://github.com/kcamacho1" target="_blank" class="text-emerald-600 underline">GitHub</a> |
-        <a href="https://linkedin.com/in/kristinacassiecamacho" target="_blank" class="text-emerald-600 underline">LinkedIn</a>
-      </p>
-    </section>
+    <!-- Back Link -->
+    <a href="../templates/projects.html" class="inline-block mt-6 text-emerald-600 hover:underline">← Back to Projects</a>
   </main>
 
-  <!-- Footer Partial -->
   <div id="footer"></div>
 
   <script>
     fetch('../partials/header.html')
       .then(res => res.text())
-      .then(data => document.getElementById('header').innerHTML = data)
-      .catch(err => console.error('Header fetch error:', err));
-
+      .then(data => document.getElementById('header').innerHTML = data);
     fetch('../partials/footer.html')
       .then(res => res.text())
-      .then(data => document.getElementById('footer').innerHTML = data)
-      .catch(err => console.error('Footer fetch error:', err));
+      .then(data => document.getElementById('footer').innerHTML = data);
   </script>
 </body>
 </html>
