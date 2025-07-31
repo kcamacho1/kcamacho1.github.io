@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Website | Kristina Camacho</title>
+  <link rel="icon" href="../images/favicon.ico" type="image/x-icon" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+
+<body class="bg-gray-100 text-gray-800 font-sans">
+  <!-- Header Partial -->
+  <div id="header"></div>
+
+  <main class="max-w-5xl mx-auto p-6">
+
+    <!-- Title -->
+    <section class="mb-12 text-center bg-green-700 p-6 rounded-lg shadow-md">
+      <h1 class="text-4xl font-semibold text-white mb-2">Personal Portfolio Website</h1>
+      <p class="text-white max-w-2xl mx-auto">
+        A responsive, user-friendly portfolio site designed to showcase my projects, skills, and experience in software development, AI, and technology solutions.
+      </p>
+      <p class="text-sm text-white mt-6">
+        <strong>Role:</strong> Designer & Developer | <strong>Focus:</strong> UI/UX Design, Responsive Layout, Content Organization
+      </p>
+    </section>
+
+    <!-- Tech Stack -->
+    <section class="mb-8 bg-white p-6 rounded-lg shadow flex flex-col items-center">
+      <h2 class="text-2xl font-semibold mb-4">Tech Stack</h2>
+      <div class="flex flex-wrap gap-3">
+        <span class="bg-pink-100 text-pink-800 px-3 py-1 rounded-full text-sm font-medium">HTML5</span>
+        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">CSS3</span>
+        <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium">Tailwind CSS</span>
+        <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm font-medium">JavaScript</span>
+        <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm font-medium">Git & GitHub Pages</span>
+      </div>
+    </section>
+
+    <!-- Overview -->
+    <section class="mb-8 bg-white p-6 rounded-lg shadow">
+      <h2 class="text-2xl font-semibold mb-4">Overview</h2>
+      <p>
+        My personal portfolio is designed as a central hub to present my development work, technical skills, and professional experience.
+        I built it from scratch to ensure complete control over the design, layout, and performance.
+        The goal was to create a site that is both visually appealing and easy to navigate, allowing visitors to quickly explore my work and get in touch.
+      </p>
+    </section>
+
+    <!-- Features -->
+    <section class="mb-8 bg-gray-50 p-6 rounded-lg shadow-inner">
+      <h2 class="text-2xl font-semibold mb-4">Key Features</h2>
+      <ul class="list-disc list-inside space-y-2">
+        <li>Fully responsive design that adapts to desktop, tablet, and mobile devices.</li>
+        <li>Tailwind CSS for rapid, modern, and consistent styling.</li>
+        <li>JavaScript-enhanced navigation for smooth page transitions.</li>
+        <li>Reusable HTML partials for the header and footer for easier maintenance.</li>
+        <li>Optimized for performance and accessibility.</li>
+      </ul>
+    </section>
+
+    <!-- Screenshots -->
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold mb-4">Screenshots</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div class="rounded-lg overflow-hidden shadow-md">
+          <img src="../assets/portfolio/portfolio.png" alt="Portfolio Homepage" class="w-full">
+        </div>
+        <div class="rounded-lg overflow-hidden shadow-md">
+          <img src="../assets/portfolio/projects-page.png" alt="Portfolio Projects Page" class="w-full">
+        </div>
+      </div>
+    </section>
+
+    <!-- Why It Matters -->
+    <section class="mb-8 bg-gray-50 p-6 rounded-lg shadow-inner">
+      <h2 class="text-2xl font-semibold mb-4">Why This Project Matters</h2>
+      <p>
+        Having a professional online presence is essential in the tech industry.
+        This portfolio not only acts as a showcase for my work but also demonstrates my abilities in front-end development, responsive design, and content presentation.
+        It’s a living project that I can easily update as I continue to grow and add new projects.
+      </p>
+    </section>
+
+    <!-- Project Links -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-semibold mb-2">Project Links</h2>
+      <ul class="list-disc list-inside">
+        <li><a href="https://github.com/kcamacho1/kcamacho1.github.io" target="_blank" class="text-green-600 underline font-medium">View on GitHub</a></li>
+        <li><a href="https://kcamacho1.github.io" target="_blank" class="text-green-600 underline font-medium">Live Site</a></li>
+      </ul>
+    </section>
+
+    <!-- Contact -->
+    <section class="text-center">
+      <h2 id="contact" class="text-2xl font-semibold mb-4">Contact</h2>
+      <p>
+        <a href="mailto:carter_kristina@proton.me" class="text-green-600 underline">Email</a> |
+        <a href="https://github.com/kcamacho1" target="_blank" class="text-green-600 underline">GitHub</a> |
+        <a href="https://linkedin.com/in/kristinacassiecamacho" target="_blank" class="text-green-600 underline">LinkedIn</a>
+      </p>
+    </section>
+  </main>
+
+  <!-- Footer Partial -->
+  <div id="footer"></div>
+
+  <!-- Script -->
+  <script>
+    fetch('../partials/header.html')
+      .then(res => res.text())
+      .then(data => document.getElementById('header').innerHTML = data);
+
+    fetch('../partials/footer.html')
+      .then(res => res.text())
+      .then(data => document.getElementById('footer').innerHTML = data);
+  </script>
+</body>
+</html>
