@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Sales Analytics Dashboard | Kristina Camacho</title>
+  <link rel="icon" href="../images/favicon.ico" type="image/x-icon" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+
+<body class="bg-gradient-to-b from-gray-50 to-gray-100 text-gray-800 font-sans">
+  <div id="header"></div>
+
+  <main class="max-w-6xl mx-auto p-6 space-y-8">
+    
+    <!-- Project Header -->
+    <section class="bg-white rounded-xl shadow-lg p-8">
+      <div class="flex flex-col md:flex-row items-start gap-8">
+        <div class="flex-1">
+          <h1 class="text-4xl font-bold text-gray-900 mb-4">AI Sales Analytics Dashboard</h1>
+          <p class="text-xl text-gray-600 mb-6">
+            A comprehensive business intelligence dashboard powered by AI, featuring interactive analytics, 
+            predictive insights, customer segmentation, and intelligent chat assistance.
+          </p>
+          
+          <!-- Tech Stack -->
+          <div class="flex flex-wrap gap-2 mb-6">
+            <span class="px-3 py-1 bg-green-100 text-green-700 text-sm font-semibold rounded-full">Python</span>
+            <span class="px-3 py-1 bg-blue-100 text-blue-700 text-sm font-semibold rounded-full">Flask</span>
+            <span class="px-3 py-1 bg-yellow-100 text-yellow-700 text-sm font-semibold rounded-full">Plotly</span>
+            <span class="px-3 py-1 bg-purple-100 text-purple-700 text-sm font-semibold rounded-full">Pandas</span>
+            <span class="px-3 py-1 bg-pink-100 text-pink-700 text-sm font-semibold rounded-full">OpenAI API</span>
+            <span class="px-3 py-1 bg-green-100 text-green-700 text-sm font-semibold rounded-full">Scikit-learn</span>
+            <span class="px-3 py-1 bg-blue-100 text-blue-700 text-sm font-semibold rounded-full">TailwindCSS</span>
+            <span class="px-3 py-1 bg-yellow-100 text-yellow-700 text-sm font-semibold rounded-full">JavaScript</span>
+          </div>
+
+          <!-- Links -->
+          <div class="flex flex-wrap gap-4">
+            <a href="https://github.com/kcamacho1/AI-Sales-Analytics-Dashboard" target="_blank" 
+               class="inline-flex items-center px-4 py-2 bg-gray-800 text-white rounded-lg hover:bg-gray-700 transition">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 .297a12 12 0 00-3.797 23.39c.6.111.793-.258.793-.577v-2.021c-3.338.726-4.042-1.612-4.042-1.612a3.18 3.18 0 00-1.337-1.758c-1.089-.745.083-.729.083-.729a2.52 2.52 0 011.837 1.236 2.56 2.56 0 003.508 1 2.557 2.557 0 01.763-1.611c-2.665-.305-5.466-1.333-5.466-5.931a4.65 4.65 0 011.237-3.225 4.32 4.32 0 01.117-3.182s1.008-.322 3.301 1.23a11.44 11.44 0 016.004 0c2.292-1.552 3.298-1.23 3.298-1.23a4.32 4.32 0 01.118 3.182 4.65 4.65 0 011.236 3.225c0 4.61-2.803 5.624-5.475 5.921a2.865 2.865 0 01.815 2.222v3.293c0 .322.192.694.801.576A12 12 0 0012 .297" />
+              </svg>
+              View on GitHub
+            </a>
+            <a href="projects.html" class="inline-flex items-center px-4 py-2 bg-emerald-600 text-white rounded-lg hover:bg-emerald-700 transition">
+              ← Back to Projects
+            </a>
+          </div>
+        </div>
+        
+        <div class="w-full md:w-80">
+          <img src="../assets/ai-dashboard/ai-dashboard.png" alt="AI Dashboard Preview" 
+               class="w-full rounded-lg shadow-lg">
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Overview -->
+    <section class="bg-white rounded-xl shadow-lg p-8">
+      <h2 class="text-3xl font-bold text-gray-900 mb-6">Project Overview</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-4">🎯 Purpose</h3>
+          <p class="text-gray-600 mb-6">
+            Created a comprehensive business intelligence dashboard that demonstrates advanced AI integration 
+            for sales analytics, predictive modeling, and interactive data visualization. The project showcases 
+            modern web development practices combined with machine learning capabilities.
+          </p>
+          
+          <h3 class="text-xl font-semibold text-gray-800 mb-4">🚀 Key Features</h3>
+          <ul class="text-gray-600 space-y-2">
+            <li class="flex items-start">
+              <span class="text-emerald-500 mr-2">•</span>
+              Interactive data visualization with Plotly charts
+            </li>
+            <li class="flex items-start">
+              <span class="text-emerald-500 mr-2">•</span>
+              AI-powered predictive analytics and insights
+            </li>
+            <li class="flex items-start">
+              <span class="text-emerald-500 mr-2">•</span>
+              Customer segmentation using K-means clustering
+            </li>
+            <li class="flex items-start">
+              <span class="text-emerald-500 mr-2">•</span>
+              Intelligent chat assistant with OpenAI integration
+            </li>
+            <li class="flex items-start">
+              <span class="text-emerald-500 mr-2">•</span>
+              Real-time statistics and performance metrics
+            </li>
+            <li class="flex items-start">
+              <span class="text-emerald-500 mr-2">•</span>
+              Responsive design with modern UI/UX
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-4">🛠️ Technical Implementation</h3>
+          <ul class="text-gray-600 space-y-2">
+            <li class="flex items-start">
+              <span class="text-blue-500 mr-2">•</span>
+              Flask backend with RESTful API endpoints
+            </li>
+            <li class="flex items-start">
+              <span class="text-blue-500 mr-2">•</span>
+              Pandas for data manipulation and analysis
+            </li>
+            <li class="flex items-start">
+              <span class="text-blue-500 mr-2">•</span>
+              Scikit-learn for machine learning algorithms
+            </li>
+            <li class="flex items-start">
+              <span class="text-blue-500 mr-2">•</span>
+              Plotly.js for interactive visualizations
+            </li>
+            <li class="flex items-start">
+              <span class="text-blue-500 mr-2">•</span>
+              OpenAI API for intelligent chat functionality
+            </li>
+            <li class="flex items-start">
+              <span class="text-blue-500 mr-2">•</span>
+              TailwindCSS for responsive styling
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Screenshots Gallery -->
+    <section class="bg-white rounded-xl shadow-lg p-8">
+      <h2 class="text-3xl font-bold text-gray-900 mb-6">Dashboard Screenshots</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="space-y-2">
+          <img src="../assets/ai-dashboard/dashboard-summary.png" alt="Dashboard Summary" 
+               class="w-full rounded-lg shadow-md hover:shadow-lg transition">
+          <p class="text-sm text-gray-600 text-center">Main Dashboard Overview</p>
+        </div>
+        <div class="space-y-2">
+          <img src="../assets/ai-dashboard/predictions.png" alt="Predictions Page" 
+               class="w-full rounded-lg shadow-md hover:shadow-lg transition">
+          <p class="text-sm text-gray-600 text-center">AI Predictions & Forecasting</p>
+        </div>
+        <div class="space-y-2">
+          <img src="../assets/ai-dashboard/prediction-analytics.png" alt="Analytics Page" 
+               class="w-full rounded-lg shadow-md hover:shadow-lg transition">
+          <p class="text-sm text-gray-600 text-center">Advanced Analytics</p>
+        </div>
+        <div class="space-y-2">
+          <img src="../assets/ai-dashboard/AI-chat-screen.png" alt="AI Chat Interface" 
+               class="w-full rounded-lg shadow-md hover:shadow-lg transition">
+          <p class="text-sm text-gray-600 text-center">AI Chat Assistant</p>
+        </div>
+        <div class="space-y-2">
+          <img src="../assets/ai-dashboard/dashboard2.png" alt="Dashboard View 2" 
+               class="w-full rounded-lg shadow-md hover:shadow-lg transition">
+          <p class="text-sm text-gray-600 text-center">Interactive Charts</p>
+        </div>
+        <div class="space-y-2">
+          <img src="../assets/ai-dashboard/ai-dashboard.png" alt="Full Dashboard" 
+               class="w-full rounded-lg shadow-md hover:shadow-lg transition">
+          <p class="text-sm text-gray-600 text-center">Complete Dashboard View</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Development Process -->
+    <section class="bg-white rounded-xl shadow-lg p-8">
+      <h2 class="text-3xl font-bold text-gray-900 mb-6">Development Process</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="text-center">
+          <div class="bg-emerald-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+            <span class="text-2xl">📊</span>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Data Analysis</h3>
+          <p class="text-gray-600">
+            Implemented comprehensive data generation and analysis using Pandas and NumPy, 
+            creating realistic business metrics for demonstration purposes.
+          </p>
+        </div>
+        
+        <div class="text-center">
+          <div class="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+            <span class="text-2xl">🤖</span>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">AI Integration</h3>
+          <p class="text-gray-600">
+            Integrated OpenAI API for intelligent chat functionality and implemented 
+            machine learning algorithms for customer segmentation and predictive analytics.
+          </p>
+        </div>
+        
+        <div class="text-center">
+          <div class="bg-purple-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+            <span class="text-2xl">🎨</span>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">UI/UX Design</h3>
+          <p class="text-gray-600">
+            Created responsive, modern interface using TailwindCSS with interactive 
+            charts powered by Plotly.js for enhanced user experience.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Challenges & Solutions -->
+    <section class="bg-white rounded-xl shadow-lg p-8">
+      <h2 class="text-3xl font-bold text-gray-900 mb-6">Challenges & Solutions</h2>
+      <div class="space-y-6">
+        <div class="border-l-4 border-emerald-500 pl-6">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Challenge: Real-time Data Visualization</h3>
+          <p class="text-gray-600">
+            Creating interactive, responsive charts that update dynamically with user interactions.
+          </p>
+          <p class="text-emerald-600 font-medium mt-2">
+            Solution: Implemented Plotly.js with Flask API endpoints for seamless data updates and smooth user interactions.
+          </p>
+        </div>
+        
+        <div class="border-l-4 border-blue-500 pl-6">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Challenge: AI Integration Complexity</h3>
+          <p class="text-gray-600">
+            Managing API rate limits and handling asynchronous AI responses while maintaining good UX.
+          </p>
+          <p class="text-blue-600 font-medium mt-2">
+            Solution: Implemented proper error handling, loading states, and fallback responses for robust AI integration.
+          </p>
+        </div>
+        
+        <div class="border-l-4 border-purple-500 pl-6">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Challenge: Performance Optimization</h3>
+          <p class="text-gray-600">
+            Ensuring fast loading times with complex data processing and multiple API calls.
+          </p>
+          <p class="text-purple-600 font-medium mt-2">
+            Solution: Optimized data structures, implemented caching strategies, and used efficient algorithms for data processing.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Future Enhancements -->
+    <section class="bg-white rounded-xl shadow-lg p-8">
+      <h2 class="text-3xl font-bold text-gray-900 mb-6">Future Enhancements</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-4">🔮 Planned Features</h3>
+          <ul class="text-gray-600 space-y-2">
+            <li class="flex items-start">
+              <span class="text-emerald-500 mr-2">•</span>
+              Real-time data streaming from external sources
+            </li>
+            <li class="flex items-start">
+              <span class="text-emerald-500 mr-2">•</span>
+              Advanced machine learning models for better predictions
+            </li>
+            <li class="flex items-start">
+              <span class="text-emerald-500 mr-2">•</span>
+              User authentication and role-based access control
+            </li>
+            <li class="flex items-start">
+              <span class="text-emerald-500 mr-2">•</span>
+              Export functionality for reports and data
+            </li>
+            <li class="flex items-start">
+              <span class="text-emerald-500 mr-2">•</span>
+              Mobile-responsive design improvements
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-4">🚀 Technical Improvements</h3>
+          <ul class="text-gray-600 space-y-2">
+            <li class="flex items-start">
+              <span class="text-blue-500 mr-2">•</span>
+              Database integration for persistent data storage
+            </li>
+            <li class="flex items-start">
+              <span class="text-blue-500 mr-2">•</span>
+              WebSocket implementation for real-time updates
+            </li>
+            <li class="flex items-start">
+              <span class="text-blue-500 mr-2">•</span>
+              Docker containerization for easy deployment
+            </li>
+            <li class="flex items-start">
+              <span class="text-blue-500 mr-2">•</span>
+              Comprehensive testing suite implementation
+            </li>
+            <li class="flex items-start">
+              <span class="text-blue-500 mr-2">•</span>
+              CI/CD pipeline for automated deployments
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Back to Projects -->
+    <section class="text-center">
+      <a href="projects.html" class="inline-flex items-center px-6 py-3 bg-emerald-600 text-white rounded-lg hover:bg-emerald-700 transition text-lg font-semibold">
+        ← Back to All Projects
+      </a>
+    </section>
+
+  </main>
+
+  <script src="../js/header.js"></script>
+</body>
+</html> 
