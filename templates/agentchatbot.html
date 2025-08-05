@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Document Chatbot | Kristina Camacho</title>
+  <link rel="icon" href="../images/favicon.ico" type="image/x-icon" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+
+<body class="bg-gradient-to-b from-gray-50 to-gray-100 text-gray-800 font-sans">
+  <div id="header"></div>
+
+  <main class="max-w-6xl mx-auto p-6 space-y-8">
+    
+    <!-- Project Header -->
+    <section class="bg-white rounded-xl shadow-lg p-8">
+      <div class="flex items-center space-x-6 mb-6">
+        <img src="../assets/agentchatbot/chatbot-icon.svg" alt="AI Chatbot Icon" class="w-20 h-20">
+        <div>
+          <h1 class="text-4xl font-bold text-gray-900 mb-2">AI Document Chatbot</h1>
+          <p class="text-xl text-gray-600">Intelligent document processing with natural language conversations</p>
+        </div>
+      </div>
+      
+      <!-- Tech Stack -->
+      <div class="flex flex-wrap gap-2 mb-6">
+        <span class="px-3 py-1 bg-green-100 text-green-700 text-sm font-semibold rounded-full">Python</span>
+        <span class="px-3 py-1 bg-blue-100 text-blue-700 text-sm font-semibold rounded-full">Flask</span>
+        <span class="px-3 py-1 bg-yellow-100 text-yellow-700 text-sm font-semibold rounded-full">ChromaDB</span>
+        <span class="px-3 py-1 bg-purple-100 text-purple-700 text-sm font-semibold rounded-full">Sentence Transformers</span>
+        <span class="px-3 py-1 bg-pink-100 text-pink-700 text-sm font-semibold rounded-full">PyPDF2</span>
+        <span class="px-3 py-1 bg-green-100 text-green-700 text-sm font-semibold rounded-full">Vector Search</span>
+        <span class="px-3 py-1 bg-blue-100 text-blue-700 text-sm font-semibold rounded-full">AI/ML</span>
+        <span class="px-3 py-1 bg-orange-100 text-orange-700 text-sm font-semibold rounded-full">HTML/CSS</span>
+      </div>
+
+      <!-- Project Links -->
+      <div class="flex space-x-4">
+        <a href="https://github.com/kcamacho1/agentchatbot" target="_blank" class="inline-flex items-center px-4 py-2 bg-gray-800 text-white rounded-lg hover:bg-gray-700 transition">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 .297a12 12 0 00-3.797 23.39c.6.111.793-.258.793-.577v-2.021c-3.338.726-4.042-1.612-4.042-1.612a3.18 3.18 0 00-1.337-1.758c-1.089-.745.083-.729.083-.729a2.52 2.52 0 011.837 1.236 2.56 2.56 0 003.508 1 2.557 2.557 0 01.763-1.611c-2.665-.305-5.466-1.333-5.466-5.931a4.65 4.65 0 011.237-3.225 4.32 4.32 0 01.117-3.182s1.008-.322 3.301 1.23a11.44 11.44 0 016.004 0c2.292-1.552 3.298-1.23 3.298-1.23a4.32 4.32 0 01.118 3.182 4.65 4.65 0 011.236 3.225c0 4.61-2.803 5.624-5.475 5.921a2.865 2.865 0 01.815 2.222v3.293c0 .322.192.694.801.576A12 12 0 0012 .297" />
+          </svg>
+          View on GitHub
+        </a>
+        <a href="projects.html" class="inline-flex items-center px-4 py-2 bg-emerald-600 text-white rounded-lg hover:bg-emerald-700 transition">
+          ← Back to Projects
+        </a>
+      </div>
+    </section>
+
+    <!-- Project Overview -->
+    <section class="bg-white rounded-xl shadow-lg p-8">
+      <h2 class="text-3xl font-bold text-gray-900 mb-6">Project Overview</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-4">What is it?</h3>
+          <p class="text-gray-600 leading-relaxed mb-4">
+            An intelligent document processing chatbot that can analyze PDFs, Word documents, and text files to provide contextual answers and insights through natural language conversations. The system uses advanced AI techniques including vector embeddings and semantic search to understand document content and respond to user queries intelligently.
+          </p>
+          <p class="text-gray-600 leading-relaxed">
+            The chatbot can handle multiple document types, extract meaningful information, and provide accurate responses based on the uploaded content. It's designed to be a powerful tool for document analysis, research assistance, and information retrieval.
+          </p>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-4">Key Features</h3>
+          <ul class="space-y-2 text-gray-600">
+            <li class="flex items-start">
+              <span class="text-emerald-500 mr-2">✓</span>
+              Multi-format document support (PDF, DOCX, TXT)
+            </li>
+            <li class="flex items-start">
+              <span class="text-emerald-500 mr-2">✓</span>
+              Intelligent text extraction and processing
+            </li>
+            <li class="flex items-start">
+              <span class="text-emerald-500 mr-2">✓</span>
+              Vector-based semantic search
+            </li>
+            <li class="flex items-start">
+              <span class="text-emerald-500 mr-2">✓</span>
+              Natural language conversation interface
+            </li>
+            <li class="flex items-start">
+              <span class="text-emerald-500 mr-2">✓</span>
+              Real-time document analysis and insights
+            </li>
+            <li class="flex items-start">
+              <span class="text-emerald-500 mr-2">✓</span>
+              Responsive web interface
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Implementation -->
+    <section class="bg-white rounded-xl shadow-lg p-8">
+      <h2 class="text-3xl font-bold text-gray-900 mb-6">Technical Implementation</h2>
+      
+      <div class="grid md:grid-cols-2 gap-8 mb-8">
+        <div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-4">Architecture</h3>
+          <div class="space-y-3 text-gray-600">
+            <div class="bg-gray-50 p-4 rounded-lg">
+              <h4 class="font-semibold text-gray-800 mb-2">Document Processing Pipeline</h4>
+              <p class="text-sm">Documents are processed through a multi-stage pipeline: extraction → chunking → embedding → storage</p>
+            </div>
+            <div class="bg-gray-50 p-4 rounded-lg">
+              <h4 class="font-semibold text-gray-800 mb-2">Vector Database</h4>
+              <p class="text-sm">ChromaDB stores document embeddings for efficient semantic search and retrieval</p>
+            </div>
+            <div class="bg-gray-50 p-4 rounded-lg">
+              <h4 class="font-semibold text-gray-800 mb-2">Web Interface</h4>
+              <p class="text-sm">Flask-based web application with real-time chat interface and document upload capabilities</p>
+            </div>
+          </div>
+        </div>
+        
+        <div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-4">Key Technologies</h3>
+          <div class="space-y-3 text-gray-600">
+            <div class="bg-gray-50 p-4 rounded-lg">
+              <h4 class="font-semibold text-gray-800 mb-2">AI/ML Stack</h4>
+              <p class="text-sm">Sentence Transformers for embeddings, semantic similarity for intelligent matching</p>
+            </div>
+            <div class="bg-gray-50 p-4 rounded-lg">
+              <h4 class="font-semibold text-gray-800 mb-2">Document Processing</h4>
+              <p class="text-sm">PyPDF2 for PDF extraction, python-docx for Word documents, comprehensive text processing</p>
+            </div>
+            <div class="bg-gray-50 p-4 rounded-lg">
+              <h4 class="font-semibold text-gray-800 mb-2">Backend Framework</h4>
+              <p class="text-sm">Flask web framework with RESTful API design and efficient request handling</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="text-xl font-semibold text-gray-800 mb-4">Code Structure</h3>
+      <div class="bg-gray-900 text-gray-100 p-4 rounded-lg font-mono text-sm overflow-x-auto">
+        <pre><code>agentchatbot/
+├── document_processor.py    # Core document processing logic
+├── main.py                 # Flask application entry point
+├── templates/
+│   └── chat.html          # Web interface template
+├── documents/             # Sample documents for testing
+├── processed/             # Processed document storage
+└── requirements.txt       # Python dependencies</code></pre>
+      </div>
+    </section>
+
+    <!-- Features & Capabilities -->
+    <section class="bg-white rounded-xl shadow-lg p-8">
+      <h2 class="text-3xl font-bold text-gray-900 mb-6">Features & Capabilities</h2>
+      
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-lg">
+          <div class="text-blue-600 text-2xl mb-3">📄</div>
+          <h3 class="text-lg font-semibold text-gray-800 mb-2">Document Processing</h3>
+          <p class="text-gray-600 text-sm">
+            Supports PDF, Word documents, and text files with intelligent text extraction and formatting preservation.
+          </p>
+        </div>
+        
+        <div class="bg-gradient-to-br from-green-50 to-green-100 p-6 rounded-lg">
+          <div class="text-green-600 text-2xl mb-3">🧠</div>
+          <h3 class="text-lg font-semibold text-gray-800 mb-2">AI-Powered Search</h3>
+          <p class="text-gray-600 text-sm">
+            Vector-based semantic search using sentence transformers for contextually relevant responses.
+          </p>
+        </div>
+        
+        <div class="bg-gradient-to-br from-purple-50 to-purple-100 p-6 rounded-lg">
+          <div class="text-purple-600 text-2xl mb-3">💬</div>
+          <h3 class="text-lg font-semibold text-gray-800 mb-2">Natural Conversations</h3>
+          <p class="text-gray-600 text-sm">
+            Intuitive chat interface that understands natural language queries and provides contextual answers.
+          </p>
+        </div>
+        
+        <div class="bg-gradient-to-br from-yellow-50 to-yellow-100 p-6 rounded-lg">
+          <div class="text-yellow-600 text-2xl mb-3">⚡</div>
+          <h3 class="text-lg font-semibold text-gray-800 mb-2">Real-time Processing</h3>
+          <p class="text-gray-600 text-sm">
+            Fast document upload and processing with immediate availability for querying and analysis.
+          </p>
+        </div>
+        
+        <div class="bg-gradient-to-br from-red-50 to-red-100 p-6 rounded-lg">
+          <div class="text-red-600 text-2xl mb-3">🔍</div>
+          <h3 class="text-lg font-semibold text-gray-800 mb-2">Smart Insights</h3>
+          <p class="text-gray-600 text-sm">
+            Extracts key information and provides intelligent insights based on document content and context.
+          </p>
+        </div>
+        
+        <div class="bg-gradient-to-br from-indigo-50 to-indigo-100 p-6 rounded-lg">
+          <div class="text-indigo-600 text-2xl mb-3">📊</div>
+          <h3 class="text-lg font-semibold text-gray-800 mb-2">Document Analytics</h3>
+          <p class="text-gray-600 text-sm">
+            Comprehensive document summary and analytics with processing statistics and metadata tracking.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Development Process -->
+    <section class="bg-white rounded-xl shadow-lg p-8">
+      <h2 class="text-3xl font-bold text-gray-900 mb-6">Development Process</h2>
+      
+      <div class="space-y-6">
+        <div class="border-l-4 border-emerald-500 pl-6">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Research & Planning</h3>
+          <p class="text-gray-600">
+            Researched vector databases, document processing libraries, and AI embedding techniques. Designed the architecture for efficient document processing and retrieval.
+          </p>
+        </div>
+        
+        <div class="border-l-4 border-blue-500 pl-6">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Core Development</h3>
+          <p class="text-gray-600">
+            Built the document processor with support for multiple file formats, implemented vector embedding system using ChromaDB, and created the Flask web application.
+          </p>
+        </div>
+        
+        <div class="border-l-4 border-purple-500 pl-6">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Testing & Optimization</h3>
+          <p class="text-gray-600">
+            Tested with various document types, optimized embedding generation, and refined the chat interface for better user experience and response accuracy.
+          </p>
+        </div>
+        
+        <div class="border-l-4 border-green-500 pl-6">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Deployment & Documentation</h3>
+          <p class="text-gray-600">
+            Set up the application for local deployment, created comprehensive documentation, and prepared the codebase for open-source contribution.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Challenges & Solutions -->
+    <section class="bg-white rounded-xl shadow-lg p-8">
+      <h2 class="text-3xl font-bold text-gray-900 mb-6">Challenges & Solutions</h2>
+      
+      <div class="grid md:grid-cols-2 gap-6">
+        <div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-4">Key Challenges</h3>
+          <ul class="space-y-3 text-gray-600">
+            <li class="flex items-start">
+              <span class="text-red-500 mr-2">⚠</span>
+              <div>
+                <strong>Dependency Conflicts:</strong> Managing compatibility between sentence-transformers, huggingface-hub, and transformers libraries
+              </div>
+            </li>
+            <li class="flex items-start">
+              <span class="text-red-500 mr-2">⚠</span>
+              <div>
+                <strong>Document Processing:</strong> Handling different file formats and extracting meaningful text content
+              </div>
+            </li>
+            <li class="flex items-start">
+              <span class="text-red-500 mr-2">⚠</span>
+              <div>
+                <strong>Vector Search:</strong> Implementing efficient semantic search with proper chunking and embedding
+              </div>
+            </li>
+            <li class="flex items-start">
+              <span class="text-red-500 mr-2">⚠</span>
+              <div>
+                <strong>Performance Optimization:</strong> Balancing processing speed with accuracy and memory usage
+              </div>
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-4">Solutions Implemented</h3>
+          <ul class="space-y-3 text-gray-600">
+            <li class="flex items-start">
+              <span class="text-green-500 mr-2">✓</span>
+              <div>
+                <strong>Version Management:</strong> Resolved dependency conflicts by using compatible versions and proper installation strategies
+              </div>
+            </li>
+            <li class="flex items-start">
+              <span class="text-green-500 mr-2">✓</span>
+              <div>
+                <strong>Multi-format Support:</strong> Implemented robust document processors for PDF, DOCX, and TXT files
+              </div>
+            </li>
+            <li class="flex items-start">
+              <span class="text-green-500 mr-2">✓</span>
+              <div>
+                <strong>Efficient Search:</strong> Used ChromaDB for vector storage and implemented smart chunking strategies
+              </div>
+            </li>
+            <li class="flex items-start">
+              <span class="text-green-500 mr-2">✓</span>
+              <div>
+                <strong>Optimized Architecture:</strong> Designed modular system with efficient processing pipeline and caching
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Future Enhancements -->
+    <section class="bg-white rounded-xl shadow-lg p-8">
+      <h2 class="text-3xl font-bold text-gray-900 mb-6">Future Enhancements</h2>
+      
+      <div class="grid md:grid-cols-2 gap-6">
+        <div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-4">Planned Features</h3>
+          <ul class="space-y-2 text-gray-600">
+            <li class="flex items-start">
+              <span class="text-blue-500 mr-2">🔮</span>
+              Multi-language document support
+            </li>
+            <li class="flex items-start">
+              <span class="text-blue-500 mr-2">🔮</span>
+              Advanced document summarization
+            </li>
+            <li class="flex items-start">
+              <span class="text-blue-500 mr-2">🔮</span>
+              User authentication and document privacy
+            </li>
+            <li class="flex items-start">
+              <span class="text-blue-500 mr-2">🔮</span>
+              Integration with cloud storage services
+            </li>
+            <li class="flex items-start">
+              <span class="text-blue-500 mr-2">🔮</span>
+              Real-time collaborative document analysis
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-4">Technical Improvements</h3>
+          <ul class="space-y-2 text-gray-600">
+            <li class="flex items-start">
+              <span class="text-green-500 mr-2">⚡</span>
+              Enhanced vector search algorithms
+            </li>
+            <li class="flex items-start">
+              <span class="text-green-500 mr-2">⚡</span>
+              Improved document processing speed
+            </li>
+            <li class="flex items-start">
+              <span class="text-green-500 mr-2">⚡</span>
+              Better memory management and caching
+            </li>
+            <li class="flex items-start">
+              <span class="text-green-500 mr-2">⚡</span>
+              Advanced error handling and logging
+            </li>
+            <li class="flex items-start">
+              <span class="text-green-500 mr-2">⚡</span>
+              Scalable microservices architecture
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="footer"></div>
+
+  <script>
+    // Load header and footer
+    ["header", "footer"].forEach(id => {
+      fetch(`../partials/${id}.html`)
+        .then(res => res.text())
+        .then(html => document.getElementById(id).innerHTML = html);
+    });
+  </script>
+</body>
+</html> 
